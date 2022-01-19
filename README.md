@@ -7,7 +7,7 @@ permalink: /about/
 <center><img src = "https://user-images.githubusercontent.com/80208196/149631270-870cc0ba-dcf8-4630-b76d-3890f17d3157.jpg" width="250" height="250"></center>
 
 # unsik6
- &nbsp;&nbsp;hello, I am unsik6. I am preparing to become game programmar. I have studied programming since 2021 summer. So If you have time, please give me a lot of feedback because it's not enough.
+ &nbsp;&nbsp;hello, I am unsik6. I am preparing to become game programmar. I have studied programming since 2021 summer. So If you have time, please give me a lot of feedback because it's not enough. and My Eng is BAD, so please give me a lot of feedback about my Eng.
 
 # 1. Personnal Info
 - INHA University
