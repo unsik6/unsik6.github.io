@@ -37,7 +37,7 @@ category: Git
 &nbsp;&nbsp;You can create a repository, using the command <I>"git init"</I>. And you can get remote repository, using the command <I>"git clone 'remote repository address"</I>.
 
 
-<br/>
+<br/><br/><br/>
 <font size = "3"><b>References</b></font>
 <a href="https://programming119.tistory.com/105"><font size = "2">1. "[Git] .gitigore이란? / .gitignore 사용법", 개발자 아저씨들 힘을모아</font></a><br/>
 <a href="https://sabarada.tistory.com/71"><font size = "2">2. "[git] git을 이용한 버전관리 - 기본편(add, commit, status, log, reset)", 사바라다는 차곡차곡</font></a><br/>

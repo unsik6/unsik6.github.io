@@ -40,15 +40,15 @@ category: Projects
 <center><img src = "https://user-images.githubusercontent.com/80208196/149667627-37cff7c0-3b61-4619-b4da-473f3209d1ce.jpg" width="150" height="300"></center>
 <center><font size = "2"><span style = "opacity:0.5">우리 돈까스집 고사장의 극찬을 올린 인스타 스토리</span></font></center>
 <br/>
-<hr style="border: solid 1px black;">
+<hr style="border: solid 0.1px black;">
 <br/>
 &nbsp;&nbsp;이 게임이 제가 기획자로 활동하는 마지막 활동이 되겠네요. 이 마지막 활동을, 1년간 부족한 팀장 옆에서 고생해 준 우리 기획자들, 아트 디자이너들, 프로그래머들에게 정말로 감사합니다.
 <br/><br/>
 고2 때부터 기획자를 꿈꿔왔고 생계의 장벽으로 인해 제대로 된 공부도 못했지만, 어느덧 10년이 흘러 프로그래머로의 진로로 변경하게 되었습니다.
 <br/>
 앞으로는 게임 프로그래머로서의 활동을 이어나갈 생각입니다.
-<br/><br/>
-<hr style="border: solid 1px black;">
+<br/>
+<hr style="border: solid 0.1px black;">
 <br/>
 <center><b>[디비진디벨롭 다운로드 링크]</b></center>
 <br/>
