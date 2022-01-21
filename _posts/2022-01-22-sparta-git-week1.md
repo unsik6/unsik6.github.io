@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Git] Git, Github and basic function of Git"
-date: 2022-01-21 19:20:23 +0900
+date: 2022-01-22 03:37:00 +0900
 category: Git
 ---
 <font size = "5"><b>1. What is 'Git' and 'Github'?</b></font>

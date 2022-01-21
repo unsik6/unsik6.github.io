@@ -19,7 +19,7 @@ category: ArticleTable
             <tr>
                 <td><center><font size = "2">1</font></center></td>
                 <td><center><font size = "2">Sparta</font></center></td>
-                <td><center><font size = "2"><a href="https://unsik6.github.io/projects/2022/01/14/dbzindevelopLaunched.html">[Git] Git, Github and basic function of Git</a></font></center></td>
+                <td><center><font size = "2"><a href="https://unsik6.github.io/git/2022/01/21/sparta-git-week1.html">[Git] Git, Github and basic function of Git</a></font></center></td>
                 <td><font size = "2">the post about Git, Github, basic functions for using Git. I wrote the posts of which topic is 'Sparta' using <I>Git class of Sparta Coding Club</I></font></td>
             </tr>
         </table>
