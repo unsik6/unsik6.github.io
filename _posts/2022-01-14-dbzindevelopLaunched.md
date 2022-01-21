@@ -10,7 +10,7 @@ category: Projects
 간단한 모바일 게임을 출시하게 되어 글을 씁니다. 저는 말도 많고 탈도 많았던 'GameMakers' 활동에서 '4Masters'라는 소규모 팀의 팀장이자 기획자로 활동해왔습니다. 비록 대략 9개월간 진행한 메인 프로젝트는 기획적 부분의 큰 오류로 인하여 중단하게 되었지만 그 기간 동안 같이 동고동락한 우리 팀원들의 열정 덕분에 결과물을 낼 수 있게 되었습니다.
 
 <br/>
-<hr style="border: solid 1px black;">
+<hr style="border: solid 0.1px black;">
 <br/>
 
 <center><font size = "5"><b>초보인 우리들의 이야기, '디비진 디벨롭'</b></font></center>
