@@ -14,7 +14,7 @@ category: Git
 <font size = "5"><b>2. What is 'commit'?</b></font>
 <hr style="border: solid 0.1px black;">
 <center><img src = "https://user-images.githubusercontent.com/80208196/150516516-2b081a79-bd8e-4251-8867-d62e09f2fae9.PNG" width="500" height="300"></center>
-&nbsp;&nbsp;Git is version control using <b><I>Commit</I></b>. Commit is the current status of project. Commit stores some information like snapshot including <b>'Who commit', 'When commit' and the status of project</b> including information of what is revised.
+&nbsp;&nbsp;Git is version control using <b><I>Commit</I></b>. Commit is the current status of project. Committing snapshot of current status of your project stores some information including <b>'Who commit', 'When commit' and the status of project</b> including information of what is revised.
 <br/>
 <center><img src = "https://user-images.githubusercontent.com/80208196/150547875-89f8089d-d4c5-4915-839f-24a31fc56353.png" width="500" height="200"></center>
 &nbsp;&nbsp;If you want to commit your local files, you have to add your local files on 'Stage'. You can do this using the command <I>"git add"</I>. <b>Git ONLY tracks and commits the files of which status is 'Staged'</b>. It prevents you from commiting some files not related with your project, some files of which size is too large or some files which threaten the security of your project.
@@ -34,7 +34,7 @@ category: Git
 <br/><center><img src = "https://user-images.githubusercontent.com/80208196/150580863-b61124c3-f2de-41c7-b5a1-a2dd11e23902.png" width="1000" height="200"></center>
 <center><font size = "2"><span style = "opacity:0.5">by ref 2, 3</span></font></center>
 &nbsp;&nbsp;You have to <I><b>'push'</b></I> commits to reflect the commits of local repository in remote repository using the command <I>"git push"</I>. On the contrary, You can reflect the commits of remote repository to local repository. This is done when you <I><b>'pull'</b></I> the commits of remote repository, using the command <I>"git pull 'remote repository name' 'branch name'"</I>. However, <I>Pull</I> includes merge. But if you don’t want to merge but still want to get the source code of the repository, use the command <I>"git fetch"</I>.
-&nbsp;&nbsp;You can create a repository, using the command <I>"git init"</I>. And you can get remote repository, using the command <I>"git clone 'remote repository address"</I>.
+&nbsp;&nbsp;You can initialize a repository, using the command <I>"git init"</I>. And you can get remote repository, using the command <I>"git clone 'remote repository address"</I>.
 
 
 <br/><br/><br/>
@@ -42,6 +42,7 @@ category: Git
 <a href="https://programming119.tistory.com/105"><font size = "2">1. "[Git] .gitigore이란? / .gitignore 사용법", 개발자 아저씨들 힘을모아</font></a><br/>
 <a href="https://sabarada.tistory.com/71"><font size = "2">2. "[git] git을 이용한 버전관리 - 기본편(add, commit, status, log, reset)", 사바라다는 차곡차곡</font></a><br/>
 <a href="https://sabarada.tistory.com/75"><font size = "2">3. "[git] git을 이용한 버전관리 - 기본편 (remote, push, pull, fetch, clone) with github", 사바라다는 차곡차곡</font></a>
+<a href="https://git-scm.com/book/en/v2"><font size = "2">4. "Git - Pro book</font></a>
 
 
 <center><font size = "2"><span style = "opacity:0.5">This post is based on <I>git class</I> of <I>Sparta Coding Club</I>.</span></font></center>
