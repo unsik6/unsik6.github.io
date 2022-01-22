@@ -4,15 +4,38 @@ title: "[Git] Git, Github and basic function of Git"
 date: 2022-01-22 03:37:00 +0900
 category: Git
 ---
-<font size = "5"><b>1. What is 'Git' and 'Github'?</b></font>
+
+<center>
+        <table border ="1" width = "300">
+            <th><font size = "2">Contents</font></th>
+            <tr>
+                <td>
+                <a href = "#1"><font size = "2">&nbsp;&nbsp;1. What is 'Git' and 'Github'?</font></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href = "#2"><font size = "2">&nbsp;&nbsp;2. What is 'commit'?</font></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href = "#3"><font size = "2">&nbsp;&nbsp;3. What is 'repository'?</font></a>
+                </td>
+            </tr>
+        </table>
+</center>
+<br/><br/>
+
+<p id = "1"><font size = "5"><b>1. What is 'Git' and 'Github'?</b></font></p>
 <hr style="border: solid 0.1px black;">
 <center><img src = "https://user-images.githubusercontent.com/80208196/150519742-4c9df8d8-e114-47c6-a606-e5af17789b7b.jpg" width="500" height="250"></center>
 &nbsp;&nbsp;<b><I>Git</I></b>, distributed reversion control system, is the instrument for verscion control and mangement of source code. You can check the version by <I>history</I> of Git and revise code or fix errors. Moreover, It is useful for collaborating with others. You can merge the work others did. Also, you can check and confirm who, when, what part of your project is created or revised. At the same time, Git even automatically checks any differences added by anyone else. It prevents any work getting deleted or harmed by other works. But Git only compares the works done using languages or tools basically set. If you want to automatically check by Git the difference of works done using Microsoft words, images and etc, you have to set some options. Otherwise, you can only check the difference of the size of files.<br/><br/>
 &nbsp;&nbsp;<I><b>Github</b></I> is the service including the remote repository of Git and the community for developers. Github serves the remote repository of the project by using Git. You can manage your projects by the repository in internet and the functions you have to develop using <I>Issues</I>. Github also serve some functions like SNS for developers. You can search some open-source project and technologies you are interested in. Moreover, you can contribute some projects if you want.<br/><br/>
 
 <br/>
-<font size = "5"><b>2. What is 'commit'?</b></font>
-<hr style="border: solid 0.1px black;">
+<p id = "2"><font size = "5"><b>2. What is 'commit'?</b></font>
+<hr style="border: solid 0.1px black;"></p>
 <center><img src = "https://user-images.githubusercontent.com/80208196/150516516-2b081a79-bd8e-4251-8867-d62e09f2fae9.PNG" width="500" height="300"></center>
 &nbsp;&nbsp;Git is version control using <b><I>Commit</I></b>. Commit is the current status of project. Committing snapshot of current status of your project stores some information including <b>'Who commit', 'When commit' and the status of project</b> including information of what is revised.
 <br/>
@@ -27,8 +50,8 @@ category: Git
 &nbsp;&nbsp;You will add your local files on <I>Staging area</I> to commit them. You can check what files you added, revised or created using the command <I>"git status"</I>. After you add your local files and check the files are <I>'Staged'</I>, you can commit them using the command <I>"git commmit"</I>.<br/><br/>
 
 <br/>
-<font size = "5"><b>3. What is 'repository'?</b></font>
-<hr style="border: solid 0.1px black;">
+<p id = "3"><font size = "5"><b>3. What is 'repository'?</b></font>
+<hr style="border: solid 0.1px black;"></p>
 &nbsp;&nbsp;There is two kind of <I><b>'Repository'</b></I>. <b>Local repository</b> is a project stored in only your computer data storage. <b>Remote repository</b> is a project stored in Git server on network like cloud service. You can connect local repository and remote repository. This is called <b>'Tracking'</b>. Local repository knows what remote repository to connect with, but remote repository doesn't know what local repository to connect with. And you already know that Git doesn't commit local repository automatically unlike cloud services.
 
 <br/><center><img src = "https://user-images.githubusercontent.com/80208196/150580863-b61124c3-f2de-41c7-b5a1-a2dd11e23902.png" width="1000" height="200"></center>
