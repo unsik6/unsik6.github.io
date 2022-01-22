@@ -17,7 +17,7 @@ category: Git
 &nbsp;&nbsp;Git is version control using <b><I>Commit</I></b>. Commit is the current status of project. Committing snapshot of current status of your project stores some information including <b>'Who commit', 'When commit' and the status of project</b> including information of what is revised.
 <br/>
 <center><img src = "https://user-images.githubusercontent.com/80208196/150547875-89f8089d-d4c5-4915-839f-24a31fc56353.png" width="500" height="200"></center>
-&nbsp;&nbsp;If you want to commit your local files, you have to add your local files on 'Stage'. You can do this using the command <I>"git add"</I>. <b>Git ONLY tracks and commits the files of which status is 'Staged'</b>. It prevents you from commiting some files not related with your project, some files of which size is too large or some files which threaten the security of your project.
+&nbsp;&nbsp;If you want to commit your local files, you have to add your local files on <I>'Staging area'</I>. You can do this using the command <I>"git add"</I>. <b>Git ONLY tracks and commits the files of which status is 'Staged'</b>. It prevents you from commiting some files not related with your project, some files of which size is too large or some files which threaten the security of your project.
 
 > &nbsp;&nbsp;Also, There is another way to adjust which file to commit. Make a text file and name the file <b>'.gitignore'</b>. Just write the name of file at '.gitignore' if you don't want to commit that. You can use this way not to commit modules, folders and filename extensions.
 
@@ -41,9 +41,9 @@ category: Git
 <font size = "3"><b>References</b></font>
 <a href="https://programming119.tistory.com/105"><font size = "2">1. "[Git] .gitigore이란? / .gitignore 사용법", 개발자 아저씨들 힘을모아</font></a><br/>
 <a href="https://sabarada.tistory.com/71"><font size = "2">2. "[git] git을 이용한 버전관리 - 기본편(add, commit, status, log, reset)", 사바라다는 차곡차곡</font></a><br/>
-<a href="https://sabarada.tistory.com/75"><font size = "2">3. "[git] git을 이용한 버전관리 - 기본편 (remote, push, pull, fetch, clone) with github", 사바라다는 차곡차곡</font></a>
+<a href="https://sabarada.tistory.com/75"><font size = "2">3. "[git] git을 이용한 버전관리 - 기본편 (remote, push, pull, fetch, clone) with github", 사바라다는 차곡차곡</font></a><br/>
 <a href="https://git-scm.com/book/en/v2"><font size = "2">4. "Git - Pro book</font></a>
 
 
-<center><font size = "2"><span style = "opacity:0.5">This post is based on <I>git class</I> of <I>Sparta Coding Club</I>.</span></font></center>
+<br/><br/><center><font size = "2"><span style = "opacity:0.5">This post is based on <I>git class</I> of <I>Sparta Coding Club</I>.</span></font></center>
 <br/><br/>
