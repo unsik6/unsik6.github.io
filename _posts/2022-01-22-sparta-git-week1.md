@@ -7,7 +7,6 @@ category: Git
 
 <center>
         <table border ="1" width = "300">
-            <th><font size = "2">Contents</font></th>
             <tr>
                 <td>
                 <a href = "#1"><font size = "2">&nbsp;&nbsp;1. What is 'Git' and 'Github'?</font></a>
