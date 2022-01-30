@@ -73,6 +73,7 @@ category: Git
 <a href="https://terry-some.tistory.com/93"><font size = "2">2. "GitHub를 활용한 이슈 관리", 데니의 Techlog</font></a><br/>
 <a href="https://docs.github.com/en/get-started/quickstart/github-flow"><font size = "2">3. "GitHub Flow", GitHub Docs</font></a><br/>
 <a href="https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/"><font size = "2">4. "Git flow, GitHub flow, GitLab flow", 잘 밤에 쓸데없는 생각하기</font></a><br/>
+<a href="https://minemanemo.tistory.com/46"><font size = "2">5. "[GIT] 병합(merge) 종류 별 완벽 설명", Developer MII-NE</font></a><br/>
 
 <br/><br/><center><font size = "2"><span style = "opacity:0.5">This post is based on <I>git class</I> of <I>Sparta Coding Club</I>.</span></font></center>
 <br/><br/>
