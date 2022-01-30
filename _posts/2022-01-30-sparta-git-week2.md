@@ -30,11 +30,11 @@ category: Git
 <hr style="border: solid 0.1px black;">
 <center><img src = "https://user-images.githubusercontent.com/80208196/151689436-019d9014-2566-45c9-ad01-684e22c5673d.PNG" width="300" height="200">&nbsp;<img src = "https://user-images.githubusercontent.com/80208196/151689437-11cd5c48-aac5-4d3a-80d2-5d8085be918c.PNG" width="100" height="200"></center>
 <center><font size = "2"><span style = "opacity:0.5">Left is the web page, 'Create Issue' and Right is the part of the labels of Issue.</span></font></center>
-&nbsp;&nbsp;<I><b>'Issue'</b></I> is the function of GitHub for managing the project or repository. You can select the assignee who will do the work of Issue and select the labels that make all collaboraters can easily check what about the issue. also, You can select the project that ths issue is included in. There are a number of labels you can select. And you can make the labels that you want. After you open new issue, you can check the issue number beside the name of issue.
+&nbsp;&nbsp;<I><b>'Issue'</b></I> is the function of GitHub for managing the project or repository. You can select the assignee who will do the work of Issue and select the labels that can make all collaborators easily check about the issue. Also, you can select the project that this issue is included in. There are a number of labels you can select. And you can make the labels you want. After you open new issue, you can check the issue number beside the name of issue.
 
 <br/><br/>
 <center><img src = "https://user-images.githubusercontent.com/80208196/151689513-15d9de81-8c43-45a8-a04d-b2d3129120a5.PNG" width="300" height="200"></center>
-&nbsp;&nbsp;You can discuss with your collaobraters about ths issue opened. And, If you push your commit named as <I>"(commit name) #(issue number)"</I>, the commit automatically register in the timeline of the issue. If the issue is completeed, <I>Close</I> the issue. Whenever you want to open the issue, you can reopen that.
+&nbsp;&nbsp;You can discuss with your collaborators about the opened issue. And, if you push your commit named as <I>"(commit name) #(issue number)"</I>, the commit automatically registers the timeline of the issue. When you completed the issue, <I>Close</I> it. Whenever you want to open the issue, you can reopen it.
 
 
 <br/><br/>
@@ -42,16 +42,16 @@ category: Git
 <hr style="border: solid 0.1px black;"></p>
 <center><img src = "https://user-images.githubusercontent.com/80208196/151693431-8594446d-0b19-4de3-8b2b-efb16e3370cc.PNG" width="600" height="200"></center>
 <center><font size = "2"><span style = "opacity:0.5">Branch Graph and Commit History (in <I>SourceTree</I>, one of GitHub GUI)</span></font></center>
-&nbsp;&nbsp;<I><b>Branch</b></I> is the useful tool for collaboration. You can create a new branch at any commit you want. Branch is independent work place others including main branch. <I>'Checkout'</I> means change your Work-Tree to the branch. If you checkout the branch, you can work with other branches not affected.
-<br/>&nbsp;&nbsp;You can manage branches. Create new one, initialize one and delete one. You have to checkout other branch that is not the branch you want to delete. If you delete a branch, the all commits of the branch is deleted.
+&nbsp;&nbsp;<I><b>Branch</b></I> is the useful tool for collaboration. You can create a new branch at any commit you want. Branch is an independent work place that doesn't affect others. <I>'Checkout'</I> means changing your Work-Tree in the branch. If you checkout the branch, you can work with other branches that are not affected.
+<br/>&nbsp;&nbsp;You can manage branches. Create new one, initialize one and delete one. For this, You have to checkout the branch you want to delete. If you delete a branch, all commits of the branch will be deleted.
 <br/>
 
-> The local repository is tracking the remote repository in each branch unit. In the local repository, you can check how much different with the branch of the remote repository.
+> The local repository is tracking the remote repository in each branch unit. In the local repository, you can check how much it is different compared to the branch of the remote repository.
 
 
-&nbsp;&nbsp;When you complete your work on the branch, you have to merge your branch with another. <I><b>'Merge'</b></I> is reflection the commits of the branch to the checkout branch you want. Commonly, Project have the <I>flow</I> ,the rule of management of branches including how to commit and work. There are some representative flows called <I>'Git Flow', 'GitHub Flow' and 'GitLab Flow'</I>. You can check them at reference of this post. (I will post about flow soon.)
+&nbsp;&nbsp;When you complete your work on the branch, you have to merge your branch with another. <I><b>'Merge'</b></I> is reflecting commits of a branch to another branch that checkout is been done. Commonly, every project has a <I>flow</I>, which is the rule of management of branches including how to commit and work. There are some representative flows called <I>'Git Flow', 'GitHub Flow' and 'GitLab Flow'</I>. You can check them at reference of this post. (I will post about flow soon.)
 <br/>
-&nbsp;&nbsp;You can select some style when you merge branches. First, you can immediately merge your branches or not. Second, you can create commit recording merge. If the merge is <I>fast-foward</I> merge, you can merge without creating a merge commit. 'Fast-foward' is the relation of branches. The branch don't make conflicts and just follow other branches. In that case, It is called fast-foward relation. Of course, you can create the merge commit when you merge the branches in fast-foward relation.
+&nbsp;&nbsp;You can select some style when you merge branches. First of all, you can either choose to immediately merge your branches or not. Secondly, you can create a commit storing merge. If the merge is <I>fast-forward</I> merge, you can merge without creating a merge commit. 'Fast-forward' is the relation of branches. The branch doesn't make conflicts and it just follows the other branches. In this case, it is called fast-forward relation. Of course, you can still create the merge commit when you merge the branches in fast-forward relation.
 
 
 <br/><br/>
@@ -59,12 +59,12 @@ category: Git
 <hr style="border: solid 0.1px black;"></p>
 <center><img src = "https://user-images.githubusercontent.com/80208196/151696240-f02c6960-b49b-4751-807d-d28cbd6ab46c.PNG" width="300" height="100"></center>
 <center><font size = "2"><span style = "opacity:0.5">The commits after the commit 'Merge branch', include revision of the same file. It will make the Merge conflict.</span></font></center>
-&nbsp;&nbsp;If you and your co-workers work at same file in each branch, <I><b>Merge Conflict</b></I> will occur when your team try merging the branches. In that case, GitHub doesn't merge your branches with Merge Conflict and notice you have to solve the conflict.
+&nbsp;&nbsp;If you and your co-workers work at same file in each branch, <I><b>Merge Conflict</b></I> will occur when your team try merging the branches. In that case, GitHub doesn't merge your branches with Merge Conflict. It immediately warns you about the conflict, to let you solve the conflict first.
 <br/><br/>
 
 <center><img src = "https://user-images.githubusercontent.com/80208196/151696689-9e85db1e-8dfc-4ab9-b481-e982f0d0732c.PNG" width="200" height="140"></center>
 <center><font size = "2"><span style = "opacity:0.5">GitHub give you the files which casue Merge Conflict like that.</span></font></center>
-&nbsp;&nbsp;Then, GitHub create new commit, only files which cause the conflict is staged. The files were revised like the picture above. Among the contents of files, "&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD ~ &gt;&gt;&gt;&gt;&gt;&gt; (branchName)" must be revised. It include the content of one of branch which cause the conflict before "=======" and the content of another after "=======". After you revise the files, add the files and commit. Then, Finally the merge is completed.
+&nbsp;&nbsp;Then, GitHub creates a new commit, only files which cause the conflict is staged. The files would be revised like the image above. Among the contents of files, "&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD ~ &gt;&gt;&gt;&gt;&gt;&gt; (branchName)" must be revised. It include the content of one of the branches which caused the conflict before "=======" and the content of another after "=======". After you revise the files, add the files and commit. Then, Finally the merge is completed.
 
 
 <br/><br/><br/>
