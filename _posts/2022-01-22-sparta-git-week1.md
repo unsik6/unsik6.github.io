@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Git] Git, Github and basic function of Git"
+title: "[Git] Git, GitHub and basic function of Git"
 date: 2022-01-22 03:37:00 +0900
 category: Git
 ---
@@ -9,7 +9,7 @@ category: Git
         <table border ="1" width = "300">
             <tr>
                 <td>
-                <a href = "#1"><font size = "2">&nbsp;&nbsp;1. What is 'Git' and 'Github'?</font></a>
+                <a href = "#1"><font size = "2">&nbsp;&nbsp;1. What is 'Git' and 'GitHub'?</font></a>
                 </td>
             </tr>
             <tr>
@@ -26,11 +26,11 @@ category: Git
 </center>
 <br/><br/>
 
-<p id = "1"><font size = "5"><b>1. What is 'Git' and 'Github'?</b></font></p>
+<p id = "1"><font size = "5"><b>1. What is 'Git' and 'GitHub'?</b></font></p>
 <hr style="border: solid 0.1px black;">
 <center><img src = "https://user-images.githubusercontent.com/80208196/150519742-4c9df8d8-e114-47c6-a606-e5af17789b7b.jpg" width="500" height="250"></center>
 &nbsp;&nbsp;<b><I>Git</I></b>, distributed reversion control system, is the instrument for verscion control and mangement of source code. You can check the version by <I>history</I> of Git and revise code or fix errors. Moreover, It is useful for collaborating with others. You can merge the work others did. Also, you can check and confirm who, when, what part of your project is created or revised. At the same time, Git even automatically checks any differences added by anyone else. It prevents any work getting deleted or harmed by other works. But Git only compares the works done using languages or tools basically set. If you want to automatically check by Git the difference of works done using Microsoft words, images and etc, you have to set some options. Otherwise, you can only check the difference of the size of files.<br/><br/>
-&nbsp;&nbsp;<I><b>Github</b></I> is the service including the remote repository of Git and the community for developers. Github serves the remote repository of the project by using Git. You can manage your projects by the repository in internet and the functions you have to develop using <I>Issues</I>. Github also serve some functions like SNS for developers. You can search some open-source project and technologies you are interested in. Moreover, you can contribute some projects if you want.<br/><br/>
+&nbsp;&nbsp;<I><b>GitHub</b></I> is the service including the remote repository of Git and the community for developers. GitHub serves the remote repository of the project by using Git. You can manage your projects by the repository in internet and the functions you have to develop using <I>Issues</I>. GitHub also serve some functions like SNS for developers. You can search some open-source project and technologies you are interested in. Moreover, you can contribute some projects if you want.<br/><br/>
 
 <br/>
 <p id = "2"><font size = "5"><b>2. What is 'commit'?</b></font>
@@ -63,8 +63,8 @@ category: Git
 <font size = "3"><b>References</b></font>
 <a href="https://programming119.tistory.com/105"><font size = "2">1. "[Git] .gitigore이란? / .gitignore 사용법", 개발자 아저씨들 힘을모아</font></a><br/>
 <a href="https://sabarada.tistory.com/71"><font size = "2">2. "[git] git을 이용한 버전관리 - 기본편(add, commit, status, log, reset)", 사바라다는 차곡차곡</font></a><br/>
-<a href="https://sabarada.tistory.com/75"><font size = "2">3. "[git] git을 이용한 버전관리 - 기본편 (remote, push, pull, fetch, clone) with github", 사바라다는 차곡차곡</font></a><br/>
-<a href="https://git-scm.com/book/en/v2"><font size = "2">4. "Git - Pro book</font></a>
+<a href="https://sabarada.tistory.com/75"><font size = "2">3. "[git] git을 이용한 버전관리 - 기본편 (remote, push, pull, fetch, clone) with GitHub", 사바라다는 차곡차곡</font></a><br/>
+<a href="https://git-scm.com/book/en/v2"><font size = "2">4. "Git - Pro book"</font></a>
 
 
 <br/><br/><center><font size = "2"><span style = "opacity:0.5">This post is based on <I>git class</I> of <I>Sparta Coding Club</I>.</span></font></center>
