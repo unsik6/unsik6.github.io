@@ -51,9 +51,9 @@ permalink: /about/
 
 
 ### [04] The Programming Club of Inha Univ., NETers. (2021)
-> &nbsp;&nbsp;Manage the study group that all members develop private project using C++. We discussed the topics of project of each one for develop suitable for one's programming skills. We use _Slack_ for giving and taking feedback to each other. My project is __"Developing snake game example of 'SFML Game Development by Example'"__.
+> &nbsp;&nbsp;Manage the study group that all members develop private project using C++. We discussed the topics of project of each one for develop suitable for one's programming skills. We use _Slack_ for giving and taking feedback to each other. My project is __Developing snake game example of 'SFML Game Development by Example'__.
 
-### [05] Mini-Tutor of the game development class using unity of _Sparta Coding Club_ (2021.12~)
+### [05] Mini-Tutor of the game development class using Unity of _Sparta Coding Club_ (2021.12~)
 > &nbsp;&nbsp;answering questions from students or helps the students who have difficulty developing games.
 
 ### [06] Designer and Host of 'Former/Current Worker as game developer Seminar' (2021)
