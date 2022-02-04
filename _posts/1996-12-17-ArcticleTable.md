@@ -8,6 +8,25 @@ category: ArticleTable
 &nbsp;&nbsp;This article is for some users who want to search the article and for me.<br/><br/>
 
 <details>
+    <summary>BOJ</summary>
+    <p>
+        <center>
+        <table border ="1" width = "600">
+            <th><font size = "2">Index</font></th>
+            <th><font size = "2">Topic</font></th>
+            <th><font size = "2">Title</font></th>
+            <th><font size = "2">Summary</font></th>
+            <tr>
+                <td><center><font size = "2">1</font></center></td>
+                <td><center><font size = "2">Sorting</font></center></td>
+                <td><center><font size = "2"><a href="https://unsik6.github.io/boj/2022/02/03/BOJ-2750.html">[BOJ] 2750 Sorting Numbers using BubbleSort</a></font></center></td>
+                <td><font size = "2">sorting the array of intergers using BubbleSort; what is BubbleSort.</font></td>
+            </tr>
+        </table>
+        </center>
+    </p>
+</details>
+<details>
     <summary>Git</summary>
     <p>
         <center>

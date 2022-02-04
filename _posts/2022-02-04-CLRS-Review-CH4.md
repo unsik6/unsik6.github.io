@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[BOJ] 2750 Sorting Numbers using BubbleSort"
+title: "[CLRS Review] Chapter 4. Divide-and-Conquer"
 date: 2022-02-04 01:30:00 +0900
-category: BOJ
+category: CLRS Review
 ---
 
 <center>
@@ -35,7 +35,7 @@ category: BOJ
 <hr style="border: solid 0.1px black;">
 &nbsp;&nbsp;BOJ_2750 is the problem of sorting numbers using array. Given integers, sort in increasing order. <I><b>Input</b></I> is the number of the integers named <I><b>N</b></I>&#40; 1 &#60;&#61; N &#60;&#61; 1,000 &#41;, and the integers &#40; &#124;i&#124; &#60;&#61; 1,000 &#41;, which never overlap, for each line after inputing N. <b>Output</b> is the integers, which were inputed, in increasing order for each line. The time limit of the problem is 1 second, and the memory limit is 128MB. The level of problem is <span style="color:brown">Bronze1</span>.
 <br/>
-<center><a href="https://www.acmicpc.net/problem/2750"><font size = "2">Webpage of the problem of BOJ</font></a></center><br/>
+<center><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"><font size = "2">Webpage of the problem of BOJ</font></a></center><br/>
 
 <br/><br/>
 <p id = "2"><font size = "5"><b>2. Approach to the problem</b></font>
