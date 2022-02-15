@@ -14,7 +14,7 @@ permalink: /about/
 - 1st Major : Computer Science Engineering (2021~)
 
     2nd Major : Politics and Deplomacy (2016~)
-- Intern of the Alogrithm laboratory
+- Undergraduate researcher of the Alogrithm laboratory
 - Contact
     + e-mail : tlsguswns119@naver.com
     + other Blog : "[아직 개발자가 되지 못했습니다](https://blog.naver.com/tlsguswns119)"
