@@ -2,81 +2,136 @@
 layout: post
 title: "[CLRS Review] Chapter 4. Divide-and-Conquer"
 date: 2022-02-04 01:30:00 +0900
-category: CLRS Review
+category: CLRS_Review
 ---
 
 <center>
-        <table border ="1" width = "300">
+        <table border ="1" width = "400">
             <tr>
                 <td>
-                <a href = "#1"><font size = "2">&nbsp;&nbsp;1. Problem</font></a>
+                <a href = "#1"><font size = "2">&nbsp;&nbsp;1. Divde-and-Conquer</font></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <a href = "#2"><font size = "2">&nbsp;&nbsp;2. Approach to the problem</font></a>
+                <a href = "#2"><font size = "2">&nbsp;&nbsp;2. Recurrences</font></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <a href = "#3"><font size = "2">&nbsp;&nbsp;3. Bubble Sort</font></a>
+                <a href = "#3"><font size = "2">&nbsp;&nbsp;3. The substitution method for solving recurrences</font></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <a href = "#4"><font size = "2">&nbsp;&nbsp;4. Time Complexity of Bubble Sort</font></a>
+                <a href = "#4"><font size = "2">&nbsp;&nbsp;4. The recursion-tree method for solving recurrences</font></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <a href = "#5"><font size = "2">&nbsp;&nbsp;5. Solve the recurrence using the master method</font></a>
                 </td>
             </tr>
         </table>
 </center>
 <br/><br/>
 
-<p id = "1"><font size = "5"><b>1. Problem</b></font></p>
+<p id = "1"><font size = "5"><b>1. Divde-and-Conquer</b></font></p>
 <hr style="border: solid 0.1px black;">
-&nbsp;&nbsp;BOJ_2750 is the problem of sorting numbers using array. Given integers, sort in increasing order. <I><b>Input</b></I> is the number of the integers named <I><b>N</b></I>&#40; 1 &#60;&#61; N &#60;&#61; 1,000 &#41;, and the integers &#40; &#124;i&#124; &#60;&#61; 1,000 &#41;, which never overlap, for each line after inputing N. <b>Output</b> is the integers, which were inputed, in increasing order for each line. The time limit of the problem is 1 second, and the memory limit is 128MB. The level of problem is <span style="color:brown">Bronze1</span>.
-<br/>
-<center><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"><font size = "2">Webpage of the problem of BOJ</font></a></center><br/>
+&nbsp;&nbsp;Divide-and-Conquer is the algorithm solving the problem by dividing the original problem to smaller subproblems. Recalling Divide-and-Conquer, we solve the problem recursively by applying three steps at each level of the recursion.<br/>
+&nbsp;&nbsp;At first, <b>Divide</b> the problem into a number of subproblems smaller than the original problem. There are two problem cases, one is called a <I><b>recursive case</b></I> where the problem is large enough to solve recursively. Another case is called a <I><b>base case</b></I> and it occurs when the problem is too small to solve recursively. The subproblem size does not always equal each other. When n/b is not an integer, we need floor and ceiling function to make n/b an integer. Therefore, each subproblem size does not equal each other.<br/>
+&nbsp;&nbsp;Secondly, <b>Conquer</b> the subproblems by solving them recursively. If the subproblem size is small enough, we can solve it in a straightforward manner. In this case, It is Θ(1) time.
+&nbsp;&nbsp;Finally, <b>Combine</b> the solutions to the subproblems into the solution for the original problem.
+
 
 <br/><br/>
-<p id = "2"><font size = "5"><b>2. Approach to the problem</b></font>
+<p id = "2"><font size = "5"><b>2. Recurrences</b></font>
 <hr style="border: solid 0.1px black;"></p>
-&nbsp;&nbsp;I try to solve the problem using 3 basic sorting algorithms, Bubble Sort, Insertion Sort and Selection Sort, because the problem require the solution running in O&#40;n<sup>2</sup>&#41; time. However, in this post, I will discribe only <I>BubbleSort</I>.
-<br/>
+&nbsp;&nbsp;A recurrence is an equation or inequality that describes a function in terms of its value on smaller inputs.<br/><br/>
+<center><img src="https://latex.codecogs.com/svg.image?T(n)=\left\{\begin{matrix}\Theta&space;(1)\quad\quad\quad\quad\quad\quad&space;if\&space;n&space;=&space;1,\\2T(n/2)&plus;\Theta&space;(n)\quad\quad&space;if\&space;n&space;>&space;1\end{matrix}\right." title="T(n)=\left\{\begin{matrix}\Theta (1)\quad\quad\quad\quad\quad\quad if\ n = 1,\\2T(n/2)+\Theta (n)\quad\quad if\ n > 1\end{matrix}\right." /></center>
+<br/>A recursive algorithm might divide subproblems into unequal sizes. And, subproblems are not necessarily constrained to be a constant fraction of the original problem size. There are lots of forms of recurrences. We normally state recurrences without boundary conditions, <i>T(1)</i>, because <i>T(n)</i> is <i>Θ(1)</i> if n is small enough.
+<br/><br/>
+&nbsp;&nbsp;The methods for solving recurrence provide asymptotic “Θ” or “O” bounds on the solution.<br/>
+<ol>
+    <li><i><b>Substitution method</b></i>: We guess a bound and then use mathematical induction to prove that is correct.</li>
+    <li><i><b>Recursion-tree method</b></i>: The tree that was converted from the recurrence has nodes that represent the costs incurred at various levels of the recursion. To solve the recurrences, use the techniques for bounding summations.</li>
+    <li><i><b>Master method</b></i>:<br/><br/>
+    <center><img src="https://latex.codecogs.com/svg.image?T(n)=aT(n/b)&plus;f(n)\quad&space;where\&space;a\geq&space;1,\&space;b>&space;1\&space;and\&space;f(n)\&space;is\&space;given\&space;function" title="T(n)=aT(n/b)+f(n)\quad where\ a\geq 1,\ b> 1\ and\ f(n)\ is\ given\ function" /></center><br/>
+    &nbsp;&nbsp;<i>a</i> is the number of subproblems in the term that input is <i>n</i>. <i>n/b</i> is the subproblem size. And we need <i>f(n)</i> time to divide the problem and combine the solutions to the subproblems of which size is <i>n/b</i> into the solution for the problem of which size is <i>n</i>.<br/>
+    &nbsp;&nbsp;It also works in form of inequality to determining upper and lower bounds.<br/><br/>
+    <center><img src="https://latex.codecogs.com/svg.image?T(n)\leq&space;aT(n/b)&plus;f(n)\quad&space;for\&space;O-notation&space;" title="T(n)\leq aT(n/b)+f(n)\quad for\ O-notation " /></center>
+    <center><img src="https://latex.codecogs.com/svg.image?T(n)\geq&space;&space;&space;aT(n/b)&plus;f(n)\quad&space;for\&space;\Omega&space;-notation&space;" title="T(n)\geq aT(n/b)+f(n)\quad for\ \Omega -notation " /></center><br/>
+    </li>
+    <li>
+    &nbsp;&nbsp;(not method) To prove loose upper and lower bounds on the recurrence and then reduce the range of uncertainty.
+    </li>
+</ol>
 
 <br/><br/>
-<p id = "3"><font size = "5"><b>3. Bubble Sort</b></font>
+<p id = "3"><font size = "5"><b>3. The substitution method for solving recurrences</b></font>
 <hr style="border: solid 0.1px black;"></p>
-<center><img src = "https://user-images.githubusercontent.com/80208196/152407061-cf59c13d-cf5c-47e4-8348-11d0a1c50954.png" width="800" height="400"></center>
-<center><font size = "2"><span style = "opacity:0.5">How to work in BubbleSort</span></font></center>
-&nbsp;&nbsp;<I><b>BubbleSort</b></I> is the basic sorting algorithm in which all elements are compared to the adjacent cell of theirselves using double iteration. In first, the idea is dividing the problem as moving just one number, the maximum number, to the last cell. in the inner iteration, increasing the iterator <I>j</I> initialized as 0&#40;start number&#41; to N-2, It is compared arr&#91;j&#93; and arr&#91;j+1&#93; in each repeat. If arr&#91;j&#93; is larger than arr&#91;j+1&#93;, swap them.  If the iterator f increase to N-1 not N-2, it occurs <I>Runtime error</I> by <I>OUT-OF-RANGE</I> beacuse it will be compared arr&#91;N-1&#93; and arr&#91;N&#93; when the iterater f is N-1.
+&nbsp;&nbsp;The substitution method for solving recurrences are comprised with two steps:<br/>
+<ol>
+    <li>Guess the form of the solution.</li>
+    <li>Use mathematical induction to find the constants and show that the solution works.</li>
+</ol>
+&nbsp;&nbsp;At first, we have to guess the appropriate form of the solution, and substitute recurrences to the form.<br/><br/>
+<center><img src="https://latex.codecogs.com/svg.image?To\&space;prove\&space;''\Theta&space;'',\&space;T(n)=cf(n)\quad&space;f(n)\&space;is\&space;the\&space;form\&space;of\&space;solution\&space;guessed," title="To\ prove\ ''\Theta '',\ T(n)=cf(n)\quad f(n)\ is\ the\ form\ of\ solution\ guessed," />
+<img src="https://latex.codecogs.com/svg.image?To\&space;prove\&space;''O&space;'',\&space;T(n)\leq&space;cf(n)\quad&space;f(n)\&space;is\&space;the\&space;form\&space;of\&space;solution\&space;guessed," title="To\ prove\ ''O '',\ T(n)\leq cf(n)\quad f(n)\ is\ the\ form\ of\ solution\ guessed," />
+<img src="https://latex.codecogs.com/svg.image?To\&space;prove\&space;''\Omega&space;&space;'',\&space;T(n)\geq&space;&space;cf(n)\quad&space;f(n)\&space;is\&space;the\&space;form\&space;of\&space;solution\&space;guessed," title="To\ prove\ ''\Omega '',\ T(n)\geq cf(n)\quad f(n)\ is\ the\ form\ of\ solution\ guessed," />
+</center><br/>
+&nbsp;&nbsp;The substitution method requires us to prove that the equation or inequality for an appropriate choice of the constant <i>c&#62;0</i>. For that, start by assuming that the formulas holds for all positive <i>m&#60;n</i>, in particular for <i>m = n/b</i>. &#40;<i>n/b</i> is the subproblem size.&#41; After that, use mathematical induction to find the constants and show that the solution works. But we have to prove that our solution holds for the boundary conditions, to use mathematical induction. Typically, it is to prove that the boundary conditions are suitable as base cases for the inductive proof.<br/>
+&nbsp;&nbsp;However, sometimes it doesn’t work when n is too small. We can solve this easily. Just prove that our solution holds for <i>n≥n<sub>0</sub></i> where a constant that we get to choose. It means removing <i>T(i)</i> where <i>i&#60;n<sub>0</sub></i> from consideration in the inductive proof, and replace T(n<sub>0</sub>) as base cases. In this case, the base case of recurrences and the base cases of the inductive proof is distinct.<br/>
+&nbsp;&nbsp;For solving recurrences using the substitution method, we have to make a good guess. There are three heuristics to do that.
+<ol>
+    <li>
+    You can solve the recurrences that is similar to one you have seen before.
+    </li>
+    <li>
+    Prove upper and lower bounds on the recurrence and then reduce the range of uncertainty to obtain more tight bounds.
+    </li>
+    <li>
+    Use recursion trees.
+    </li>
+</ol>
+&nbsp;&nbsp;When you guess an asymptotic bound on the solution of a recurrence and prove it in inductive proof, follow the tips below because the proof is not easy.<br/>
+<ol>
+    <li>
+    It is not easy to prove the detailed bound by inductive assumption. If you correctly guess an asymptotic bound on the solution of a recurrence, sometimes it is impossible to prove your bound in inductive proof. So, <b>just subtract a lower-order term.</b>
+    </li>
+    <li>
+    But that isn’t mean you don’t need to <b>prove recurrences explicitly.</b> You have to prove T(n)≤cn in the example below.<br/><br/>
+    <center><img src="https://latex.codecogs.com/svg.image?\begin{align*}&space;T(n)&space;&\leq&space;2(c\left&space;\lfloor&space;n/2\right&space;\rfloor)&plus;n&space;\\&space;&\leq&space;cn&space;&plus;&space;n&space;\\&space;&=&space;O(n)\&space;\rightarrow&space;wrong\end{align*}" title="\begin{align*} T(n) &\leq 2(c\left \lfloor n/2\right \rfloor)+n \\ &\leq cn + n \\ &= O(n)\ \rightarrow wrong\end{align*}" /></center>
+    </li>
+    <li>
+    <b>Change the variables or anything that is too complicated or difficult to use for proof.</b> Just make the formula simple.
+    </li>
+</ol>
 <br/><br/>
-&nbsp;&nbsp;We need to repeat the inner iteration at N-1 times for all element sorting. So, in the outer iteration, increasing the iterator <I>i</I> initialized as 0 to N-2, the inner iteration,moving the maximum number to the last cell,  will work for all elements. In this situation, the algorithm run in O&#40;n<sup>2</sup>&#41; but It can be decreased to &#40;n<sup>2</sup>/2&#41; time although not affecting the growth rate.
+<p id = "4"><font size = "5"><b>4. The recursion-tree method for solving recurrences</b></font><hr style="border: solid 0.1px black;"></p>
+<font size = "4"><b>How to draw the recursion tree</b></font>
+&nbsp;&nbsp;In Recursion tree, each node represents the cost of a subproblem. We obtain the total cost of recurrences, as summing all elements of the set of the cost per level. The good guess devised using the recursion tree can be proved by the substitution method.<br/><br/>
+<center><img src = "https://user-images.githubusercontent.com/80208196/156223232-cce2f1a8-f232-45cd-92d3-17a14fa8bb63.png" width="300" height="150"><img src = "https://user-images.githubusercontent.com/80208196/156223238-dffe55fa-c264-4609-80d4-fc1f2b1257c5.png" width="600" height="350"><br/>
+<img src="https://latex.codecogs.com/svg.image?T(n)=2T(\left&space;\lfloor&space;n/3\right&space;\rfloor)&plus;\Theta&space;(n^2)" title="T(n)=2T(\left \lfloor n/3\right \rfloor)+\Theta (n^2)" /></center><br/>
+&nbsp;&nbsp;Draw a root node, <i>T(n)</i>. Then expand the tree by drawing the children of the root node. The number of the children are equal to the number of subproblems. After that, exchange the value of root node to the cost that is spent to divide the problem or the subproblems and to combine the subproblems. Next, you give the children the recurrence of subproblems, like <i>T(n/2)</i>.<br/>
+&nbsp;&nbsp;After that, you keep on expanding the tree by drawing the children of each node until they meet base case, <i>T(1)</i>. As a consequence, the internal nodes(it is recursive case) represent the cost that was spent to divide the problem or the subproblems and to combine the subproblems.<br/><br/>
+<font size = "4"><b>Solve the recurrence using the recursion tree</b></font>
+&nbsp;&nbsp;We can solve the recurrence by computing all cost of the recursion tree. Before summing all cost of the recursion tree, we need to sum the cost of each level. And before that, we need to compute how many levels are in the tree. We can derive an equation about the level and the subproblem sizes. In the picture above, the subproblem size in level i is n/3^i. Thus, we can derive the level of base case from<br/><br/>
+<center><img src="https://latex.codecogs.com/svg.image?1=n/3^i\&space;\rightarrow&space;\&space;i=\log_3&space;n" title="1=n/3^i\ \rightarrow \ i=\log_3 n" /></center><br/>
+&nbsp;&nbsp;So, the recursion tree has log_3⁡n+1 levels. (the depth of root is 0). Now then, compute the sum of the costs of each level. In the picture above, there are two subproblems, and the cost of each node is <img src="https://latex.codecogs.com/svg.image?c(n/3^i)^2\&space;(i=level)" title="c(n/3^i)^2\quad (i=level)" /> So, the sum of the cost in each level <i>i</i> is <img src="https://latex.codecogs.com/svg.image?2^ic(n/3^i)^2=c(2/9)^in^2\&space;(i=level)" title="2^ic(n/3^i)^2=c(2/9)^in^2\ (i=level)" /> In the base level, the sum is <img src="https://latex.codecogs.com/svg.image?\Theta(1)*2^{log_3&space;2}=\Theta&space;(n^{log_3&space;2})" title="\Theta(1)*2^{log_3 2}=\Theta (n^{log_3 2})" />. Thus, if we sum the costs of each level by summing <img src="https://latex.codecogs.com/svg.image?c(2/9)^in^2\&space;(i=level,\&space;where\&space;0\leq&space;i\leq&space;log_3&space;n-1)" title="c(2/9)^in^2\ (i=level,\ where\ 0\leq i\leq log_3 n-1)" /> and <img src="https://latex.codecogs.com/svg.image?\Theta(n^{log_3&space;2})&space;" title="\Theta(n^{log_3 2}) " />.<br/><br/>
+<img src="https://latex.codecogs.com/svg.image?\begin{align*}T(n)&space;&=&space;cn^2&plus;(2/9)cn^2&plus;(2/9)^2cn^2&plus;\cdots&space;&plus;(2/9)^{log_3&space;n-1}&plus;\Theta&space;(n^{log_3&space;2})\\&space;&=&space;\sum_{i=0}^{log_3&space;n-1}(2/9)^icn^2&plus;\Theta&space;(n^{log_3&space;2})\\&space;&=&space;\frac{(2/9)^{log_3&space;n}-1}{(2/9)-1}cn^2&plus;\Theta&space;(n^{log_3&space;2})\end{align*}" title="\begin{align*}T(n) &= cn^2+(2/9)cn^2+(2/9)^2cn^2+\cdots +(2/9)^{log_3 n-1}+\Theta (n^{log_3 2})\\ &= \sum_{i=0}^{log_3 n-1}(2/9)^icn^2+\Theta (n^{log_3 2})\\ &= \frac{(2/9)^{log_3 n}-1}{(2/9)-1}cn^2+\Theta (n^{log_3 2})\end{align*}" /><br/><br/>
+&nbsp;&nbsp;We can derive the lower bound from the formula above.<br/><br/>
+<img src="https://latex.codecogs.com/svg.image?\begin{align*}T(n)&=\sum_{i=0}^{log_3&space;n-1}(2/9)^icn^2&plus;\Theta&space;(n^{log_3&space;2})\\&<&space;\sum_{i=0}^{\infty}(2/9)^icn^2&plus;\Theta&space;(n^{log_3&space;2})\\&=\frac{1}{(1-2/9)}cn^2&plus;\Theta&space;(n^{log_3&space;2})=O(n^2)\end{align*}" title="\begin{align*}T(n)&=\sum_{i=0}^{log_3 n-1}(2/9)^icn^2+\Theta (n^{log_3 2})\\&< \sum_{i=0}^{\infty}(2/9)^icn^2+\Theta (n^{log_3 2})\\&=\frac{1}{(1-2/9)}cn^2+\Theta (n^{log_3 2})=O(n^2)\end{align*}" /><br/><br/>
+&nbsp;&nbsp;So, we have derived a guess of <img src="https://latex.codecogs.com/svg.image?T(n)=O(n^2)" title="T(n)=O(n^2)" /> for original recurrence <img src="https://latex.codecogs.com/svg.image?T(n)=2T(\left&space;\lfloor&space;n/3\right&space;\rfloor)&plus;\Theta&space;(n^2)" title="T(n)=2T(\left \lfloor n/3\right \rfloor)+\Theta (n^2)" />. After deriving the guess, we have to verify the guess is correct using the substitution method. In our example, we have to verify <img src="https://latex.codecogs.com/svg.image?T(n)\leq&space;dn^2" title="T(n)\leq dn^2" /> for some constant <img src="https://latex.codecogs.com/svg.image?d>0" title="d>0" /> using the constant <img src="https://latex.codecogs.com/svg.image?c>0" title="c>0" />.<br/><br/>
+<center><img src="https://latex.codecogs.com/svg.image?\begin{align*}&space;T(n)&\leq&space;2T(\left&space;\lfloor&space;n/3\right&space;\rfloor)&plus;cn^2&space;\\&space;&\leq&space;2d(n/3)^2&plus;cn^2&space;\\&space;&=&space;(2/9)dn^2&plus;cn^2\leq&space;dn^2\&space;(d\geq&space;(9/7)c)\end{align*}" title="\begin{align*} T(n)&\leq 2T(\left \lfloor n/3\right \rfloor)+cn^2 \\ &\leq 2d(n/3)^2+cn^2 \\ &= (2/9)dn^2+cn^2\leq dn^2\ (d\geq (9/7)c)\end{align*}" /><br/>
+<font size = "2">The recursion-tree method is not limited to when the subproblem size is the same.</font></center>
+
 <br/><br/>
-
-<p id = "4"><font size = "5"><b>4. Time Complexity of Bubble Sort</b></font><hr style="border: solid 0.1px black;"></p>
-<br/>
-<center><img src="https://latex.codecogs.com/svg.image?(N-1)(N-1)=O(n^2)" title="(N-1)(N-1)=O(n^2)" /></center>
-<center><font size = "2"><span style = "opacity:0.5">The time complexity of repeating N-1 times in each iteration</span></font></center>
-&nbsp;&nbsp;As you can see from the formula above, the running time of method that repeat N-1times in each iteration is O&#40;n<sup>2</sup>&#41;. But Each time the inner iteration repeats, the numbers are sorted in decreasing order from the last cell. It means the numbers in the cells from the cell of which index is N-1-i, to the last cell is already sorted increasing order. So, The inner iteration don't need to repeat N-1 time in each repeat but just N-1-i time.
-<br/><br/>
-<center><img src="https://latex.codecogs.com/svg.image?\sum_{1}^{N-1}O(1)&space;=&space;O(n^2/2)&space;=&space;O(n^2)&space;" title="\sum_{1}^{N-1}O(1) = O(n^2/2) = O(n^2) " /></center>
-<center><font size = "2"><span style = "opacity:0.5">Of course, The coefficient of O&#40;1&#41; in sum, in fact, is 4, but it can be ignored by asyptotic notation </span></font></center>
-&nbsp;&nbsp;So, the time complexity is changed from O&#40;n<sup>2</sup>&#41; to O&#40;n<sup>2</sup>/2&#41;&#40;But the coefficient of n<sup>2</sup> is ignored in the asymptotic notation&#41;. Because Bubblesort run in O&#40;n<sup>2</sup>&#41; time at any case, however, this algoritm is evaluated 'slow'. Although sorting is over when in middle of the running time, BubbleSort proceed until end of double iteration. It can be optimized. Add the boolen variable or one integer to inspect that there is something change in the current term of first iteration. If not, break the iteration. It make the running time O&#40;n&#41; in the best case and reduce the running time in the average case.
-<br/>
-> BUBBLESORT WITHOUT OPTIMIZING(A) <br/>
-> &nbsp;&nbsp;<b>Input</b> A is the unsorted array of integers<br/>
-> &nbsp;&nbsp;<b>Output</b> the sorted array A
-> &nbsp;&nbsp;<b>for</b> i = 0 <b>to</b> N-2<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> j = 0 <b>to</b> N-2-i<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>if</b> arr&#91;j&#93; &#62; arr&#91;j+1&#93;<br/>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>swap</i>&#40;arr&#91;j&#93;, arr&#91;j+1&#93;&#41;
-
-<br/>
-<center>Source Code</center>
-<center><font size = "2"><div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div><div style="line-height:130%">9</div><div style="line-height:130%">10</div><div style="line-height:130%">11</div><div style="line-height:130%">12</div><div style="line-height:130%">13</div><div style="line-height:130%">14</div><div style="line-height:130%">15</div><div style="line-height:130%">16</div><div style="line-height:130%">17</div><div style="line-height:130%">18</div><div style="line-height:130%">19</div><div style="line-height:130%">20</div><div style="line-height:130%">21</div><div style="line-height:130%">22</div><div style="line-height:130%">23</div><div style="line-height:130%">24</div><div style="line-height:130%">25</div><div style="line-height:130%">26</div><div style="line-height:130%">27</div><div style="line-height:130%">28</div><div style="line-height:130%">29</div><div style="line-height:130%">30</div><div style="line-height:130%">31</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0086b3">#include</span><span style="color:#a71d5d">&lt;</span>iostream<span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#a71d5d">using</span>&nbsp;<span style="color:#a71d5d">namespace</span>&nbsp;<span style="color:#066de2">std</span>;</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#066de2">int</span>&nbsp;main()</div><div style="padding:0 6px; white-space:pre; line-height:130%">{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#999999">//&nbsp;input&nbsp;N&nbsp;is&nbsp;the&nbsp;size&nbsp;of&nbsp;array.</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">int</span>&nbsp;N;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">cin</span>&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span><span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span>&nbsp;N;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#999999">//&nbsp;initialize&nbsp;new&nbsp;array&nbsp;whose&nbsp;size&nbsp;is&nbsp;N.</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">int</span><span style="color:#a71d5d">*</span>&nbsp;arr&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#a71d5d">new</span>&nbsp;<span style="color:#066de2">int</span>[N];</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">for</span>&nbsp;(<span style="color:#066de2">int</span>&nbsp;i&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#0099cc">0</span>;&nbsp;i&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;N;&nbsp;i<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span><span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">cin</span>&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span><span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span>&nbsp;arr[i];</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">for</span>&nbsp;(<span style="color:#066de2">int</span>&nbsp;i&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#0099cc">0</span>;&nbsp;i&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;N&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">-</span>&nbsp;<span style="color:#0099cc">1</span>;&nbsp;i<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span><span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">for</span>&nbsp;(<span style="color:#066de2">int</span>&nbsp;j&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#0099cc">0</span>;&nbsp;j&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;N&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">-</span>&nbsp;i&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">-</span>&nbsp;<span style="color:#0099cc">1</span>;&nbsp;j<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span><span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>)</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">if</span>&nbsp;(arr[j]&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&gt;</span>&nbsp;arr[j&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>&nbsp;<span style="color:#0099cc">1</span>])</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#066de2">int</span>&nbsp;temp&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;arr[j];</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j]&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;arr[j&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>&nbsp;<span style="color:#0099cc">1</span>];</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>&nbsp;<span style="color:#0099cc">1</span>]&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;temp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;}</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;<span style="color:#999999">//&nbsp;print&nbsp;output.</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">for</span>&nbsp;(<span style="color:#066de2">int</span>&nbsp;k&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">=</span>&nbsp;<span style="color:#0099cc">0</span>;&nbsp;k&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;N;&nbsp;k<span style="color:#ff3399"></span><span style="color:#a71d5d">+</span><span style="color:#ff3399"></span><span style="color:#a71d5d">+</span>)&nbsp;<span style="color:#066de2">cout</span>&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span><span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;arr[k]&nbsp;<span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span><span style="color:#ff3399"></span><span style="color:#a71d5d">&lt;</span>&nbsp;<span style="color:#63a35c">'\n'</span>;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#a71d5d">delete</span>[]&nbsp;arr;</div><div style="padding:0 6px; white-space:pre; line-height:130%">}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
-</font></center>
-
-
-
-
-
+<p id = "5"><font size = "5"><b>5. Solve the recurrence using the master method</b></font><hr style="border: solid 0.1px black;"></p>
+&nbsp;&nbsp;Using the master method is the simplest way to solve the recurrence. Just check that the recurrence (which is the form below) satisfies the terms of the master method. If it is, just apply the master method to the recurrence.<br/><br/>
+<center><img src="https://latex.codecogs.com/svg.image?T(n)=aT(n/b)&plus;f(n)\quad&space;where&space;a\geq&space;1,\&space;b>1\&space;and\&space;f(n)\&space;is\&space;given\&space;function" title="T(n)=aT(n/b)+f(n)\quad where a\geq 1,\ b>1\ and\ f(n)\ is\ given\ function" /></center><br/><br/>
+&nbsp;&nbsp;<i>n/b</i> b is not always an integer. However, in the asymptotic behavior of the recurrence, there is no matter replacing <img src="https://latex.codecogs.com/svg.image?T(\left&space;\lfloor&space;n/b\right&space;\rfloor)" title="T(\left \lfloor n/b\right \rfloor)" />, <img src="https://latex.codecogs.com/svg.image?T(\left&space;\lceil&space;n/b\right&space;\rceil)" title="T(\left \lceil n/b\right \rceil)" /> with <img src="https://latex.codecogs.com/svg.image?T(n/b)" title="T(n/b)" />. We can solve the recurrence in 3 terms.<br/><br/>
+<img src="https://latex.codecogs.com/svg.image?if\&space;f(n)=O(n^{log_b&space;a-\epsilon&space;})\&space;for\&space;some\&space;constant\&space;\epsilon&space;>0,\&space;then\&space;T(n)=\Theta&space;(n^{log_b&space;a})" title="if\ f(n)=O(n^{log_b a-\epsilon })\ for\ some\ constant\ \epsilon >0,\ then\ T(n)=\Theta (n^{log_b a})" /><br/><br/>
+<img src="https://latex.codecogs.com/svg.image?if\&space;f(n)=\Theta&space;(n^{log_b&space;a}),\&space;then\&space;T(n)=\Theta&space;(n^{log_b&space;a}logn)" title="if\ f(n)=\Theta (n^{log_b a}),\ then\ T(n)=\Theta (n^{log_b a}logn)" /><br/><br/>
+<img src="https://latex.codecogs.com/svg.image?\\&space;if\&space;f(n)=\Omega&space;(n^{log_b&space;a&plus;\epsilon&space;})\&space;for\&space;some\&space;constant\&space;\epsilon&space;>0\\&space;and\&space;if\&space;af(n/b)\leq&space;cf(n)\&space;for\&space;some\&space;constant\&space;c<1\&space;and\&space;all\&space;sufficiently\&space;large\&space;n,\\then\&space;T(n)=\Theta&space;(f(n))" title="\\ if\ f(n)=\Omega (n^{log_b a+\epsilon })\ for\ some\ constant\ \epsilon >0\\ and\ if\ af(n/b)\leq cf(n)\ for\ some\ constant\ c<1\ and\ all\ sufficiently\ large\ n,\\then\ T(n)=\Theta (f(n))" /><br/><br/>
+&nbsp;&nbsp;We can find that <i>f(n)</i> and <img src="https://latex.codecogs.com/svg.image?n^{log_b&space;a}" title="n^{log_b a}" />  affects the solution of the recurrence. In all case, the larger is the solution of the recurrence. But the simple comparison between <i> f(n)</i> and <img src="https://latex.codecogs.com/svg.image?n^{log_b&space;a}" title="n^{log_b a}" /> is not only condition of the master method. The comparison must satisfy polynomially. Therefore, as there are gaps among cases, you have to check if the recurrence you want to solve satisfies any case.
