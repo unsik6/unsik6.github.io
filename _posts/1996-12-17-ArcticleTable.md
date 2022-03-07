@@ -22,6 +22,12 @@ category: ArticleTable
                 <td><center><font size = "2"><a href="https://unsik6.github.io/boj/2022/02/03/BOJ-2750.html">[BOJ] 2750 Sorting Numbers using BubbleSort</a></font></center></td>
                 <td><font size = "2">sorting the array of intergers using BubbleSort; what is BubbleSort.</font></td>
             </tr>
+            <tr>
+                <td><center><font size = "2">1</font></center></td>
+                <td><center><font size = "2">Sorting</font></center></td>
+                <td><center><font size = "2"><a href="https://unsik6.github.io/boj/2022/02/03/BOJ-2751.html">[BOJ] 2751 Sorting Numbers using Merge Sort</a></font></center></td>
+                <td><font size = "2">sorting the array of intergers using MergeSort; what is MergeSort.</font></td>
+            </tr>
         </table>
         </center>
     </p>
