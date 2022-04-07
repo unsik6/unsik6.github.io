@@ -82,7 +82,6 @@ category: CLRS_Review
 
 <br/><br/>
 <p id = "4"><font size = "5"><b>4. Heap Sort</b></font><hr style="border: solid 0.1px black;"></p>
-<font size = "4"><b>How to draw the recursion tree</b></font>
 &nbsp;&nbsp;Sorting n elements is easy to understand. Just build a heap with n elements and remove minimum until no elements are left in the heap. It needs O(logn) time for each element. So, It needs <i><b>O(nlogn)</b></i> time.<br/><br/>
 
 <center>Source Code</center>
