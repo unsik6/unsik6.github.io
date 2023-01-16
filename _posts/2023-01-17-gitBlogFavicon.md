@@ -3,6 +3,7 @@ layout: post
 title: GitBlog) Favicon
 categories: GitBlog
 tags: [GitBlog, Favicon, Yat]
+published: true
 ---
 ## 1. Favicon
 <hr>
