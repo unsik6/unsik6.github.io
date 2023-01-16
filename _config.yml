@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Footprint of Happy Turtle
+title: Footprints
 email: tlsguswns1196xx@gmail.com
 author: unsik6
 
@@ -107,7 +107,7 @@ yat:
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-theme_color: coolblack
+# theme_color: coolblack
 #
 # Custom color as below:
 # theme_color: "#882250"
