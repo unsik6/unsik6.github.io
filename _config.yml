@@ -196,12 +196,12 @@ header_pages:
 # See https://utteranc.es/
 # set follow_site_theme true to make utterances' theme follow the site's
 
-# utterances:
-#   repo: "owner/repo"
-#   issue_term: "title"
-#   label: "utterances comment"
-#   theme: "github-light"
-#   follow_site_theme: true
+utterances:
+  repo: "unsik6/unsik6.github.io"
+  issue_term: "pathname"
+  label: "Comment"
+  theme: "photon-dark"
+  follow_site_theme: true
 
 # Build settings
 # highlighter: none
