@@ -88,7 +88,7 @@ title: About
 
 - <i>Learning Art Effect Skill</i> using Unity by cureent art effector in his study group. <br/>
 
-<h3>[Others]</h3>
+## [Others]
 1. User Judge of 7th Game Creative Audtion in Korea (2017)<br/>
 2. User Judge of Korea Section of 2021 Google Indie Game Festival (2021)<br/>
 
