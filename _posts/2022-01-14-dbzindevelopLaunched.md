@@ -50,6 +50,5 @@ tags: [Projects]
 &nbsp;&nbsp;고2 때부터 기획자를 꿈꿔왔고 생계의 장벽으로 인해 제대로 된 공부도 못했지만, 어느덧 10년이 흘러 프로그래머로의 진로로 변경하게 되었습니다. 앞으로는 게임 프로그래머로서의 활동을 이어나갈 생각입니다. ~~라고 했었지만, 현재는 컴퓨터공학과 대학원 준비중입니다.~~
 <br/>
 <center><b>[디비진디벨롭 다운로드 링크]</b></center>
-<br/>
 <center><a href="https://play.google.com/store/apps/details?id=com.FMasters.dbzindev">디비진디벨롭 (Google Play Store - Only Korea)</a></center>
 <center><a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000760208&scYn=Y">디비진디벨롭 (Onstore)</a></center>
