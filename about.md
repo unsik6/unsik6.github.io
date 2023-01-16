@@ -6,56 +6,53 @@ title: About
 <div style="width:300px; height:500px; float:left; margin-right:10px;">
     <img src = "https://user-images.githubusercontent.com/80208196/212664702-62e7627c-f75c-45b7-8613-7a7deaec80f7.jpg" width="300" height="500">
     </div>
-    <div style="width:300px; height:450px; float:left;">
-        &nbsp;&nbsp;Hello, I'm unsik6. I'm currently an undergraduate researcher at Algorithm lab of Inha Univ. I am studying string algorithms and NLP. I often work on tutoring basic datastructures and algorithms to some undergraduate student. I studied developing video games, but not now.<br/><br/>
-        - Inha University <br/>
-        - Major Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/>
-        - Undergraduate researcher at the Alogrithm laboratory <br/><br/>
-    </div><div style="clear:both;"></div>
+<div style="width:300px; height:450px; float:left;">
+    &nbsp;&nbsp;Hello, I'm unsik6. I'm currently an undergraduate researcher at Algorithm lab of Inha Univ. I am studying string algorithms and NLP. I often work on tutoring basic datastructures and algorithms to some undergraduate student. I studied developing video games, but not now.<br/><br/>
+    - Inha University <br/>
+    - Major Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/>
+    - Undergraduate researcher at the Alogrithm laboratory <br/><br/>
+</div><div style="clear:both;"></div>
 <br/><br/>
 
-<h2>☎ Contact</h2>
+## ☎ Contact
 <hr>
 - <a href = "https://github.com/unsik6">github</a><br/>
 - e-mail: <a href = "mailto:tlsguswns1196xx@gmail.com">tlsguswns1196xx@gmail.com</a>
+<br/><br/>
 
-<h2>✎ Languages I am learning </h2>
+## ✎ Languages I am learning
 <hr>
 -  C, C++, C# <br/>
 -  CUDA C of NVIDIA <br/>
 -  Python <br/>
-
 <br/><br/>
 
-<h2>💻 Programs I am learning</h2>
+## 💻 Programs I am learning
 <hr>
 - Unity <br/>
 - CUDA <br/>
 - NLP modules based on Transformers <br/>
-
 <br/><br/>
 
-<h2>📂 Main personal study and work (winter, 2023)</h2>
+## 📂 Main personal study and work (winter, 2023)
 <hr>
 - An algorithm to find a maximum common subsequence longer than outputs of previous researchs <br/>
 - Text Summarization in NLP <br/>
 - The Problem Solving study group <br/>
 - Study Computational Geometric Algorithms <br/>
-
 <br/><br/>
 
-<h2>📑 Publications and Conferences </h2>
+## 📑 Publications and Conferences
 <hr>
 1. Hyeonjun Shin, Jeong Seop Sim, "A New Algorithm of Finding a Maximal Common Subsequence of Two Strings", Korea Software Congress 2022, Jeju, Korea (Dec. 2022) – Oral [In Korean] <br/>
    - Paper: Proceedings of Korean Institute of Information Scientists and Engineer - KSC2022, 1212-1214 <br/>
    - Won The Top Paper of Theoretical Computer Science Award <br/>
-
 <br/> <br/>
 
-
-<h2>📚 What I do and did</h2>
+## 📚 What I do and did
 <hr>
-<h3>2022</h3>
+
+### 2022
 <p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~)</b></p>
 - Researched maximal common subsequence algorithm <br/>
 - Involved in NLP project: Project management, well-known model and metrics analysis <br/>
@@ -65,7 +62,7 @@ title: About
 <p style="font-size:x-large"><b>Mini-Tutor of the game development class using Unity of <i>Sparta Coding Club</i> (2021.12~2022.04)</b></p>
 &nbsp;&nbsp;answering questions from students or helps the students who have difficulty developing games.<br/>
 
-<h3>2021</h3>
+### 2021
 <p style="font-size:x-large"><b>Designer and Host of 'Former/Current Worker as game developer Seminar' (2021)</b></p>
 &nbsp;&nbsp;I designed and hosted 'Former/Current Worker as game dveloper Seminar' for people preparing to become game designer, game art designer or game programmar. Because of COVID-19, the seminars were held online in <i>Gather Town</i>.<br/>
 - 1st Seminar : <i>Current Game Art Designer Seminar - Designer Koo (Company C)</i> (2021.09)<br/>
