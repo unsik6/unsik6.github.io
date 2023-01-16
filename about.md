@@ -77,10 +77,10 @@ title: About
 <br/>
 <div style="width:150px; height:300px; float:left; margin-right:10px; text-align:center;">
     <img src = "https://user-images.githubusercontent.com/80208196/149629963-e6221521-8f25-4619-bf7e-a97b081b9f1a.jpg" width="150" height="300">
-    </div>
-    <div style="width:150px; height:300px; float:left; text-align:center;">
-        <img src = "https://user-images.githubusercontent.com/80208196/149629819-dfe820ea-a746-421d-a5dc-54d9f731ef4b.jpg" width="150" height="300">
-    </div><div style="clear:both;"></div>
+</div>
+<div style="width:150px; height:300px; float:left; text-align:center;">
+    <img src = "https://user-images.githubusercontent.com/80208196/149629819-dfe820ea-a746-421d-a5dc-54d9f731ef4b.jpg" width="150" height="300">
+</div><div style="clear:both;"></div>
 <br/>
 
 
