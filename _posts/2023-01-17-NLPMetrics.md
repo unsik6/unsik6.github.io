@@ -14,8 +14,8 @@ tags: [AI, ML, DL, NLP, Metric]
 
 &nbsp;&nbsp;There are two aspects of evaluation. These are different about what is evaluated. The image above is best description I think. <u><b>Because a model evaluation is intrinsic evaluation, I write about intrinsic evaluation.</b></u>
 
-1. <b>Instrinsic Evaluation</b>: evaluate intermediary objectives.
-2. <b>Extrinsic Evaluation</b>: evaluate the performances of output of application. For example, 
+1. <b>Instrinsic Evaluation</b>: evaluate intermediary objectives. (Developer)
+2. <b>Extrinsic Evaluation</b>: evaluate the performances of output of application. (CEO)
 
 <br/><br/>
 
