@@ -10,7 +10,7 @@ tags: [AI, ML, DL, NLP, Metric]
 ## * Two Aspects of Evaluation
 <hr>
 
-<img src = "https://user-images.githubusercontent.com/80208196/212993102-bbe19430-0b6f-462c-8f2d-4f198942d117.png"><center><span style = "opacity:0.5"><a href = "https://www.researchgate.net/figure/Difference-between-extrinsic-and-intrinsic-evaluation-for-semantic-grounding-in-language_fig1_362089773/actions#reference">ref. Probing Semantic Grounding in Language Models of Code with Representational Similarity Analysis - Scientific Figure on ResearchGate.</a></span></center><br/>
+<img src = "https://user-images.githubusercontent.com/80208196/212993102-bbe19430-0b6f-462c-8f2d-4f198942d117.png"><center><span style = "opacity:0.5"><a href = "https://www.researchgate.net/figure/Difference-between-extrinsic-and-intrinsic-evaluation-for-semantic-grounding-in-language_fig1_362089773">ref. Probing Semantic Grounding in Language Models of Code with Representational Similarity Analysis - Scientific Figure on ResearchGate.</a></span></center><br/>
 
 &nbsp;&nbsp;There are two aspects of evaluation. These are different about what is evaluated. The image above is best description I think. <u><b>Because a model evaluation is intrinsic evaluation, I write about intrinsic evaluation.</b></u>
 
