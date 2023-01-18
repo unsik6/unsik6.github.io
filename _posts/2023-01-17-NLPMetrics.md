@@ -7,7 +7,7 @@ tags: [AI, ML, DL, NLP, Metric]
 ---
 &nbsp;&nbsp;This post is the outline of metrics used in NLP. So, there are only name, category, some relation with other metrics and short description. I will write post about each metric, and link them in this post.
 
-## * Two Aspects of Evaluation
+## * Two Terms of Evaluation
 <hr>
 
 <img src = "https://user-images.githubusercontent.com/80208196/212993102-bbe19430-0b6f-462c-8f2d-4f198942d117.png"><center><span style = "opacity:0.5"><a href = "https://www.researchgate.net/figure/Difference-between-extrinsic-and-intrinsic-evaluation-for-semantic-grounding-in-language_fig1_362089773">ref. Probing Semantic Grounding in Language Models of Code with Representational Similarity Analysis - Scientific Figure on ResearchGate.</a></span></center><br/>
