@@ -81,8 +81,8 @@ pip install scipy = 1.1.0
 
 ## Refers
 <hr>
-<a href = "https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.misc.toimage.html#scipy.misc.toimage"><i>SciPy.org</i> (documentation)</a>
-<a href = "https://pillow.readthedocs.io/en/stable/index.html">Docs of <i>Pillow</i> </a>
-<a href = "https://stackoverflow.com/questions/38867869/how-to-create-image-from-numpy-float32-array">stack overflow, "How to create image from numpy float32 array?"</a>
-<a href = "https://stackoverflow.com/questions/62708777/importerror-with-scipy-misc-cannot-import-toimage">stack overflow, "ImportError with scipy.misc cannot import toimage"</a>
+<a href = "https://docs.scipy.org/doc/scipy-1.1.0/reference/generated/scipy.misc.toimage.html#scipy.misc.toimage"><i>SciPy.org</i> (documentation)</a><br/>
+<a href = "https://pillow.readthedocs.io/en/stable/index.html">Docs of <i>Pillow</i> </a><br/>
+<a href = "https://stackoverflow.com/questions/38867869/how-to-create-image-from-numpy-float32-array">stack overflow, "How to create image from numpy float32 array?"</a><br/>
+<a href = "https://stackoverflow.com/questions/62708777/importerror-with-scipy-misc-cannot-import-toimage">stack overflow, "ImportError with scipy.misc cannot import toimage"</a><br/>
 <a href = "https://robot9710.tistory.com/5">ROBOT공학자, "[Python] scipy에서 imread가 안읽혀!!! ( ImportError: cannot import name 'imread' )"</a>
