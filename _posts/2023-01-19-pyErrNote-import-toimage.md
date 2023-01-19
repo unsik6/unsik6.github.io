@@ -57,6 +57,7 @@ pip install scipy = 1.1.0
     ```bash
     conda install pillow
     ```
+<br/>
 
 2. Convert float32 values to 0-255 int8 format. Then, you can use `Image.fromarray' with the default mode.
     ```python
@@ -66,6 +67,8 @@ pip install scipy = 1.1.0
 
     &nbsp;&nbsp;There are many modes of `Image.fromarray`. Check <a href = "https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes">the documentation of pillow</a>, and convert your array to an appropriate type.
 
+<br/>
+
 ### 3) Just convert type to 0-255 int type
 <hr>
 &nbsp;&nbsp;Because I used `matplotlib.imshow`, I could show the image using int matrix without converting that to an image.
@@ -74,6 +77,7 @@ pip install scipy = 1.1.0
     formatted = (matrices[i] * 255 / np.max(matrices[i])).astype('uint8')
     plt.imshow(formatted)
 ```
+<br/><br/>
 
 ## Refers
 <hr>
