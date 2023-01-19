@@ -59,7 +59,7 @@ pip install scipy = 1.1.0
     ```
 <br/>
 
-2. Convert float32 values to 0-255 int8 format. Then, you can use `Image.fromarray' with the default mode.
+2. Convert float32 values to 0-255 int8 format. Then, you can use `Image.fromarray` with the default mode.
     ```python
     formatted = (matrices[i] * 255 / np.max(matrices[i])).astype('uint8')
     img = Image.fromarray(formatted)    # convert to image
