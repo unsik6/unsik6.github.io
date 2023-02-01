@@ -19,7 +19,7 @@ published: true
 4. Downlaod your package. Click 'Favicon package' in the image below. Now, you get a zip file.<center><img src = "https://user-images.githubusercontent.com/80208196/212730911-06746699-2558-4218-a3e0-226f1c82145e.png"></center><br/>
 5. Decompress the zip file. Rename the file decompressed to 'favicon.ico'.<br/><br/>
 6. Move the file into 'assets' folder.<br/><br/>
-7. Copy the code in the image above. And, paste that at `/_includes/custom_head.html`. You have to copy the relative path of 'favicon.ico' folder, and paste that at the '{folder_path}' in the code below.
+7. Copy the code in the image above. And, paste that at `/_includes/custom_head.html`. You have to copy the relative path of 'favicon.ico' folder, and paste that at the `{folder_path}` in the code below.
     ```html
     <link rel="apple-touch-icon" sizes="180x180" href="{folder_path}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{folder_path}/favicon-32x32.png">
@@ -30,4 +30,5 @@ published: true
     <meta name="theme-color" content="#ffffff">
     ```
 
-8. Go to '_config.yml', and set the relative path of 'favicon.ico' file in the 'favicon.ico' folder the value of 'favicon'.
+8. Go to '_config.yml', and set the relative path of 'favicon.ico' <u>file</u> in the 'favicon.ico' <u>folder</u> the value of `favicon`.
+<center><img src = "https://user-images.githubusercontent.com/80208196/215963864-4033402e-df35-4bd7-affc-7bb078c695ea.png"></center>
