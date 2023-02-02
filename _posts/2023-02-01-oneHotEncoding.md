@@ -7,7 +7,7 @@ tags: [AI, NLP, Word Embedding, Preprocessing]
 ---
 ## 1. Word Embedding
 <hr>
-&nbsp;&nbsp;Because language that consist of words, prepositionas and etc can not be computed, it have to be converted to some computable representation. So, in data processing stage, input texts is converted to  a vector, and it is called <i><b>'Word Embedding'</b></i>. There are a lot of word embedding methods. In this post, <b><i>'One-Hot Encoding'</i></b> will be introduced.
+&nbsp;&nbsp;Because language that consist of words, prepositionas and etc is not a computable object, it have to be converted to some computable representation. So, in data processing stage, input texts is converted to  a vector, and it is called <i><b>'Word Embedding'</b></i>. There are a lot of word embedding methods. In this post, <b><i>'One-Hot Encoding'</i></b> will be introduced.
 
 <br/><br/>
 
@@ -42,10 +42,10 @@ tags: [AI, NLP, Word Embedding, Preprocessing]
 <hr/>
 
 1. Computing the distance between vectors is hard. However, there is similarity(distance) between some words of languages. For example, cats are more similar with dogs than ships semantically.
-2. We need very large memory space to implement One-Hot vectors. If there are a dictionary whose size is <i>N</i>, we need <i>O(N<sup>2</sup>)</i> space.
+2. We need very large memory space to implement One-Hot vectors. If there is a dictionary whose size is <i>N</i>, we need <i>O(N<sup>2</sup>)</i> space.
 
 <br/>
-&nbsp;&nbsp;So, One-Hot Encoding is not prefered. There are a lot of embedding method including dense representation(truely word embedding).
+&nbsp;&nbsp;So, One-Hot Encoding is not prefered. There are a lot of embedding methods including dense representation(truely word embedding).
 
 <br/><br/>
 
