@@ -33,7 +33,7 @@ tags: [AI, NLP, Word Embedding, Preprocessing]
 
 <center><span style = "opacity:0.5">fig 2. One-Hot vectors by One-Hot Encoding</span></center><br/>
 
-&nbsp;&nbsp;One-Hot encoding is a vector representation, whose dimensions is mapped to continuous values(words or classes). Each value are converted to <i><b>One-Hot vector</b></i>. One-Hot vector of a value is allocated 1 at the dimension mapped to the value, and all other dimensional elements are 0. For example, in fig 2, the index of Papers class is 2. It means the second dimension of all One-Hot vectors are mapped to Papers class. So, One-Hot vector of Papers class is (0, 0, 1, 0, ...). <u><b>One-Hot vector is sparse vector because almost elements of One-Hot vector is 0. (One-Hot Encoding is sparse representation)</b></u> And cosine similarity between all One-Hot vectors is 0, because two One-Hot vectors are orthogonal.<br/>
+&nbsp;&nbsp;One-Hot encoding is a vector representation, whose dimensions is mapped to continuous values(words or classes). Each value are converted to <i><b>One-Hot vector</b></i>. One-Hot vector of a value is allocated 1 at the dimension mapped to the value, and all other dimensional elements are 0. For example, in fig 2, the index of Papers class is 2. It means the second dimension of all One-Hot vectors is mapped to Papers class. So, One-Hot vector of Papers class is (0, 0, 1, 0, ...). <u><b>One-Hot vector is sparse vector because almost elements of One-Hot vector is 0. (One-Hot Encoding is sparse representation)</b></u> And cosine similarity between all One-Hot vectors is 0, because two One-Hot vectors are orthogonal.<br/>
 &nbsp;&nbsp;In NLP, the words or tokens are converted One-Hot vectors.
 
 <br/><br/>
