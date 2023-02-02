@@ -10,12 +10,11 @@ tags: [AI, ML, DL, NLP, Metric]
 ## * Two Terms of Evaluation
 <hr>
 
-<img src = "https://user-images.githubusercontent.com/80208196/212993102-bbe19430-0b6f-462c-8f2d-4f198942d117.png"><center><span style = "opacity:0.5"><a href = "https://www.researchgate.net/figure/Difference-between-extrinsic-and-intrinsic-evaluation-for-semantic-grounding-in-language_fig1_362089773">ref. Probing Semantic Grounding in Language Models of Code with Representational Similarity Analysis - Scientific Figure on ResearchGate.</a></span></center><br/>
+1. <b>Instrinsic Evaluation</b>: Evaluation by human. It is most perfect evaluation. Depending on who scores, there is a deviation in the scoring results, because there is no clear grading standard especially in NLP. Futhermore, it spends lots of time and cost.
+2. <b>Extrinsic Evaluation</b>: Evaluation by a score metric such as BLEU or ROUGUE. This runs as program, so mass evaluation and automation are available, with cost and time advantages. But it is not guaranteed that the result of score metrics is not equal or similar with one of evaluation by human.
 
-&nbsp;&nbsp;There are two aspects of evaluation. These are different about what is evaluated. The image above is best description I think. <u><b>Because a model evaluation is intrinsic evaluation, I write about intrinsic evaluation.</b></u>
-
-1. <b>Instrinsic Evaluation</b>: evaluate intermediary objectives. (Developer)
-2. <b>Extrinsic Evaluation</b>: evaluate the performances of output of application. (CEO)
+&nbsp;&nbsp;There are two aspects of evaluation. These are different about how the model is evaluated. I will introduce intrinsic evaluation used in NLP tasks.
+> On the other aspect, the definition of two words is different. In aspect of <u>evaluation to models in an application</u>, intrinsic evaluation focuses on intermediary objectives related directly the performance of an NLP component on a defined subtask, and extrinsic evaluation focuses on the performance of the final objective of the component on the complete application. For example, a text summarization application consists of word embedding model and summarization model. Intrinsic evaluation is that each models in the application is evaluated separately. In another aspect, <u>whether comparision with other models is included or not is matter.</u> In intrinsic evaluation, the model is evaluated independently. Contrary to extrinsic evaluation is consist of performance comparsion with other models.
 
 <br/><br/>
 
