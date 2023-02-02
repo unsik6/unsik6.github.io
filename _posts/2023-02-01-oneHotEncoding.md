@@ -20,7 +20,7 @@ tags: [AI, NLP, Word Embedding, Preprocessing]
 |Class|Cats|Ships|Papers|Knifes|...|Dogs|
 
 <center><span style = "opacity:0.5">fig 1. a mapping table of some image classes</span></center><br/>
-&nbsp;&nbsp;Whereas, in classification task, the indices of image classes labeled cats, ships and etc are not allocated based on similarity. If cats class is indexed to 0, it works well whether dogs class is indexed to 1 or 1,000,000. Moreover, The distance of classes can not be used. In fig 1, although cats are more similar with dogs than ships, the distance of Cats class and Ships class is 1, less than the distance of Cats class and Dogs class, 1,000,000.<br/><br/>
+&nbsp;&nbsp;Whereas, in classification task, the indices of image classes labeled cats, ships and etc are not allocated, based on similarity. If cats class is indexed to 0, it works well whether dogs class is indexed to 1 or 1,000,000. Moreover, The distance of classes can not be used. In fig 1, although cats are more similar with dogs than ships, the distance of Cats class and Ships class is 1, less than the distance of Cats class and Dogs class, 1,000,000.<br/><br/>
 
 | |Index|Cats|Ships|Papers|...|Dogs|
 |:---:|:---:|:---:|:---:|:---:|:---:|
