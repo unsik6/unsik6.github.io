@@ -14,16 +14,18 @@ tags: [Statistics, Math, AI]
 
 <br/><br/>
 
-## 2. Termonologies
+## 2. Probability distribution
 <hr>
-|Term|Description|
 |:---:|:---:|
-|$P(\mathrm{x}=x)$||
-|$$||
-|$$||
-|$$||
+|$P(\mathrm{x}=x)$, $P(x)$|Probability that variable $\mathrm{x}$ is $x$|
+|$P(\mathrm{x})$|Probability distribution (function)|
+|$P(\mathrm{x}, \mathrm{y}$|Joint probability distribution|
 
-<center><span style = "opacity:0.5">fig 2. General terminologies</span></center><br/>
+<img src = "https://user-images.githubusercontent.com/80208196/216532809-312cf775-6022-44db-9687-81d7e3150a47.png"><center><span style = "opacity:0.5">fig 2. Probability distribution</span></center><br/>
+<img src = "https://user-images.githubusercontent.com/80208196/216532912-b93d5055-8797-4ebd-8a47-0046216422ff.png"><center><span style = "opacity:0.5">fig 3. Joint probability distribution</span></center><br/>
+
+<br/>
+&nbsp;&nbsp;
 
 <br/><br/>
 
