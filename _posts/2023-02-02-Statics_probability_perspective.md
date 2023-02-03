@@ -12,19 +12,16 @@ tags: [Statistics, Math, AI]
 
 &nbsp;&nbsp;The goal of AI imitates a function in real world. If an AI model works well, it can predicts deterministic target. However, real world consists probability density. So, There is not always deterministic value. The true goal of AI is imitates probability density function in real world. Neural networks can model a virtual probability density function $P(\mathrm{y}\| \mathrm{x})$, and approximate a probability density function of real world.
 
-some 
-
-
 <br/><br/>
 
 ## 2. Termonologies
 <hr>
-|Tern|Description|
+|Term|Description|
 |:---:|:---:|
-|<font face = "Cambria Math"><i>P(</i>x=<i>x</i>)</font>||
-|<font face = "Cambria Math"><i></i></font>||
-|<font face = "Cambria Math"><i></i></font>||
-|<font face = "Cambria Math"><i></i></font>||
+|$P(\mathrm{x}=x)$||
+|$$||
+|$$||
+|$$||
 
 <center><span style = "opacity:0.5">fig 2. General terminologies</span></center><br/>
 
