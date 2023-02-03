@@ -10,7 +10,7 @@ tags: [Statistics, Math, AI]
 <img src = "https://user-images.githubusercontent.com/80208196/216513932-a4426d31-87e2-4437-80da-327b137aa623.png">
 <center><span style = "opacity:0.5">fig 1. Probability density function imitation</span></center><br/>
 
-&nbsp;&nbsp;The goal of AI imitates a function in real world. If an AI model works well, it can predicts deterministic target. However, real world consists probability density. So, There is not always deterministic value. The true goal of AI is imitates probability density function in real world. Neural networks can model a virtual probability density function $P(y\| x)$, and approximate a probability density function of real world.
+&nbsp;&nbsp;The goal of AI imitates a function in real world. If an AI model works well, it can predicts deterministic target. However, real world consists probability density. So, There is not always deterministic value. The true goal of AI is imitates probability density function in real world. Neural networks can model a virtual probability density function $P(\mathrm{y}\| \mathrm{x})$, and approximate a probability density function of real world.
 
 some 
 
