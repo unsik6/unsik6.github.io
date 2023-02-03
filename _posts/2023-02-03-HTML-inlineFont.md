@@ -7,7 +7,7 @@ published: true
 ---
 ## 1. Markdown inline math
 <hr>
-&nbsp;&nbsp;Generally, Markdown supprots inline math, using `$` keyword.
+&nbsp;&nbsp;Generally, Github Markdown supprots inline math, using `$` keyword.
 
 ```html
 $1 + 1 = 2$
