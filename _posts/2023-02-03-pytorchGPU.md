@@ -31,12 +31,10 @@ tags: [Python, PyTorch, CUDA, AI, ML, DL]
 
 2. Install <i>NVDIA CUDA Deep Neural Network Library(cuDNN)</i>. Before installation, you have to check the version of cuDNN that is compatible with CUDA Toolkit version which you choose. You can do both from <a href = "https://developer.nvidia.com/rdp/cudnn-archive">cuDNN Archive</a>. (You have to sign-in NVDIA DEVELOPER)
 
-3. Check `PATH` of CUDA in environment variable. If there is no `PATH` of CUDA, then add the CUDA PATH.
+3. Check whether there are `CUDA_PATH` and `CUDA_PATH_V11_6`(version is yours) in environment variable. If they are not, add the CUDA PATH.
 
     ```bash
-    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin
-    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\extras\CUPTI\libx64
-    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
     ```
     You have to change the version to yours.
 
@@ -68,4 +66,8 @@ tags: [Python, PyTorch, CUDA, AI, ML, DL]
 ## Refers
 <hr>
 <a href = "https://developer.nvidia.com/"><i>NVDIA DEVELOPER</i> </a><br/>
-<a href = "https://076923.github.io/posts/Python-pytorch-1/"><i>Daehee YUN Tech Blog, "Python Pytorch 강좌 : 제 1강 - PyTorch 소개 및 설치"</i> </a><br/>
+<a href = "https://en.wikipedia.org/wiki/CUDA">CUDA wikipedia</a><br/>
+<a href = "https://pytorch.org/">PyTorch</a><br/>
+<a href = "https://076923.github.io/posts/Python-pytorch-1/">Daehee YUN Tech Blog, "Python Pytorch 강좌 : 제 1강 - PyTorch 소개 및 설치"</a><br/>
+<a href = "https://afsdzvcx123.tistory.com/entry/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-Windows%EC%9C%88%EB%8F%84%EC%9A%B0-CUDA-cuDNN-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95">BeomBeomJoJo, "[인공지능] Windows(윈도우) CUDA, cuDNN 설치방법"</a><br/>
+<a href = "https://hanryang1125.tistory.com/13">코딩연습장, "NVDIA CUDA 및 cuDNN 설치 (Windows)"</a><br/>

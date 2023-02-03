@@ -13,8 +13,6 @@ tags: [Python, Anaconda, Error Note]
 
 &nbsp;&nbsp;When I install packages in <i>Anaconda</i> env, `CondaSSLError` appears.
 
-
-
 <br/><br/>
 
 ## 2. Solution
