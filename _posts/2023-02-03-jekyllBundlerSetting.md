@@ -21,25 +21,18 @@ published: true
 
 3. Run <i>Windows cmd</i>. And install jekyll bundler.
 
-    ```bash
-    gem install jekyll bundler
-    bundle install
-    ```
+    <script src="https://gist.github.com/unsik6/ea72260b9f897e94c3515512f829ad58.js"></script>
 
 ## 2. Using
 <hr>
 
 1. Run <i>Windows cmd</i>. And go to the directory where your blog is.
 
-    ```bash
-    cd {your directory}
-    ```
+    <script src="https://gist.github.com/unsik6/604a4269b4d08bad85d4075a1f92d92b.js"></script>
 
 2. Input the command below. Then, you can watch your blog at `localhost:4000` using any browser.
 
-    ```bash
-    bundle exec jekyll serve
-    ```
+    <script src="https://gist.github.com/unsik6/5a6da658b53da01a0af44639e57b2540.js"></script>
 
 ## Refers
 <hr>

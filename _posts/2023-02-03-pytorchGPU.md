@@ -33,25 +33,17 @@ tags: [Python, PyTorch, CUDA, AI, ML, DL]
 
 3. Check whether there are `CUDA_PATH` and `CUDA_PATH_V11_6`(version is yours) in environment variable. If they are not, add the CUDA PATH.
 
-    ```bash
-    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
-    ```
+    <script src="https://gist.github.com/unsik6/d88ffef28b2a8addb3b9f23642805230.js"></script>
+
     You have to change the version to yours.
 
 4. Install PyTorch using the command that you can get from <a href = "https://pytorch.org/">PyTorch website</a>.
 
-    ```bash
-    conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
-    ```
+    <script src="https://gist.github.com/unsik6/96d113ff667e417909016a3d15fbf047.js"></script>
 
 5. Check the PyTorch version and CUDA availability.
 
-    ```python
-    import torch
-
-    print(torch.__version__)
-    print(torch.cuda.is_available())
-    ```
+    <script src="https://gist.github.com/unsik6/3f74b998da4763d8bff1941683e7e4ee.js"></script>
 
     <img src = "https://user-images.githubusercontent.com/80208196/216703492-8bf0ce1b-1af7-4f5b-ae40-7ae5426ddbeb.png">
 

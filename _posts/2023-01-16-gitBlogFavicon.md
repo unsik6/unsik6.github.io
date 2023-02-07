@@ -20,15 +20,7 @@ published: true
 5. Decompress the zip file. Rename the file decompressed to 'favicon.ico'.<br/><br/>
 6. Move the file into 'assets' folder.<br/><br/>
 7. Copy the code in the image above. And, paste that at `/_includes/custom_head.html`. You have to copy the relative path of 'favicon.ico' folder, and paste that at the `{folder_path}` in the code below.
-    ```html
-    <link rel="apple-touch-icon" sizes="180x180" href="{folder_path}/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{folder_path}/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{folder_path}/favicon-16x16.png">
-    <link rel="manifest" href="{folder_path}/site.webmanifest">
-    <link rel="mask-icon" href="{folder_path}/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    ```
+    <script src="https://gist.github.com/unsik6/17bdce4d46bd9cf6b99892eccda74078.js"></script>
 
 8. Go to '_config.yml', and set the relative path of 'favicon.ico' <u>file</u> in the 'favicon.ico' <u>folder</u> the value of `favicon`.
-<center><img src = "https://user-images.githubusercontent.com/80208196/215963864-4033402e-df35-4bd7-affc-7bb078c695ea.png"></center>
+    <center><img src = "https://user-images.githubusercontent.com/80208196/215963864-4033402e-df35-4bd7-affc-7bb078c695ea.png"></center>

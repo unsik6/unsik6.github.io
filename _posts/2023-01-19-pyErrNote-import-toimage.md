@@ -12,13 +12,7 @@ tags: [Python, Error Note, AI, ML, DL]
 
 &nbsp;&nbsp;I was learning image processing in DL lecture. I had to convert float32 matrices into images. In the lecture, the code below is proposed.
 
-```python
-from scipy.misc import toimage
-fig = plt.figure(figsize = (20, 2))
-for i in range(0, n):
-    ax = fig.sadd_subplot(1, n, i+1)
-    ax.imshow(toimage(matrices[i]))
-```
+<script src="https://gist.github.com/unsik6/5503cd871eb47e572f5a749c22a7ff2a.js"></script>
 &nbsp;&nbsp;`matrices[i].shape` is `32, 32, 3`, and 'matrices' save float32 value. The last dimension whose shape is 3 means the channel of images is RGB. But the code above did not work.
 
 <br/><br/>
@@ -38,10 +32,7 @@ for i in range(0, n):
 <hr>
 &nbsp;&nbsp;The first solution is downgrading `scipy` module. Uninstall first, if you already installed that.
 
-```bash
-pip uninstall scipy
-pip install scipy = 1.1.0
-```
+<script src="https://gist.github.com/unsik6/2984a4eb21af196254afd7f11a449168.js"></script>
 
 <br/>
 
@@ -50,20 +41,13 @@ pip install scipy = 1.1.0
 &nbsp;&nbsp;This solution is following the suggetion of the documentation of <i>Scipy</i>.
 
 1. First, install `pillow` module, or install `image` module directly.
-    ```bash
-    pip install pillow
-    ```
+    <script src="https://gist.github.com/unsik6/3bf220ef2bd04f79c49298251cd6b55e.js"></script>
     or,
-    ```bash
-    conda install pillow
-    ```
+    <script src="https://gist.github.com/unsik6/2217d071ad80fe0776e0d9e693b4f93a.js"></script>
 <br/>
 
 2. Convert float32 values to 0-255 int8 format. Then, you can use `Image.fromarray` with the default mode.
-    ```python
-    formatted = (matrices[i] * 255 / np.max(matrices[i])).astype('uint8')
-    img = Image.fromarray(formatted)    # convert to image
-    ```
+    <script src="https://gist.github.com/unsik6/d02c119b358ef07d335bb745127ed2c6.js"></script>
 
     &nbsp;&nbsp;There are many modes of `Image.fromarray`. Check <a href = "https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes">the documentation of pillow</a>, and convert your array to an appropriate type.
 
@@ -73,10 +57,7 @@ pip install scipy = 1.1.0
 <hr>
 &nbsp;&nbsp;Because I used `matplotlib.imshow`, I could show the image using int matrix without converting that to an image.
 
-```python
-    formatted = (matrices[i] * 255 / np.max(matrices[i])).astype('uint8')
-    plt.imshow(formatted)
-```
+<script src="https://gist.github.com/unsik6/fc3b6e540e504cbe34da383d1f815b21.js"></script>
 <br/><br/>
 
 ## Refers

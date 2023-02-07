@@ -68,3 +68,15 @@ $on-laptop:        800px !default;
   "misc/gitment",
   "misc/click-to-top"
 ;
+
+/* Import gist dark mode color */
+@import "/assets/css/mintSyntax.css";
+
+/* Decorate gist to dark mode */
+.gist-meta{display: none;} /* Remove meta text zone "hosted by Github" */
+.gist .markdown-body .csv-data th,
+.gist .markdown-body .csv-data td,
+.gist .markdown-body .csv-data .blob-num {background: #373737; background-color: #373737;}
+.gist .blob-interaction-bar .octicon-search > path {fill: #fff}
+.gist .blob-interaction-bar > input {background: #373737}
+.gist .blob-interaction-bar {background: #373737}
