@@ -139,7 +139,7 @@ night_mode: "on"
 # Code badge setting
 # You can enable or disable the code badge and so on
 code_badge:
-  enabled: "true"
+  enabled: "false"
   color: "#fff"
   background_color: "#5E1688"
   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
@@ -204,7 +204,7 @@ utterances:
   follow_site_theme: true
 
 # Build settings
-# highlighter: none
+# highlighter: rouge
 markdown: kramdown
 kmarkdown:
   input: GFM
