@@ -3,7 +3,7 @@ layout: post
 title: Python) Error - scipy.misc.toimage
 subtitle: How to convert float32 matrix to image
 categories: Python
-tags: [Python, Error Note, AI, ML, DL]
+tags: [Python, Error Note, AI]
 ---
 ## 1. Error
 <hr>

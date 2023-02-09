@@ -2,7 +2,7 @@
 layout: post
 title: Python) PyTorch GPU Installation
 categories: Python
-tags: [Python, PyTorch, CUDA, AI, ML, DL]
+tags: [Python, PyTorch, CUDA, AI]
 ---
 &nbsp;&nbsp;<i>PyTorch</i> is a powerful deep learning module. There are two version of PyTorch, <i>PyTorch CPU</i> and <i>PyTorch GPU</i>. If you want to run own program more fast, you need to use <i>PyTorch GPU</i>. In this post, I introduce how to install the module in <i>Anaconda</i> env.
 

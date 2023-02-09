@@ -3,7 +3,7 @@ layout: post
 title: NLP) Metrics - Writing
 subtitle: Outline of Metrics used in NLP
 categories: NLP
-tags: [AI, ML, DL, NLP, Metric]
+tags: [AI, NLP, Metric]
 ---
 &nbsp;&nbsp;This post is the outline of metrics used in NLP. So, there are only name, category, some relation with other metrics and short description. I will write post about each metric, and link them in this post.
 
