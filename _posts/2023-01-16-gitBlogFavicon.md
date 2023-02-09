@@ -2,7 +2,7 @@
 layout: post
 title: GitBlog) Favicon
 categories: GitBlog
-tags: [GitBlog, Favicon, Yat]
+tags: [GitBlog, Jekyll]
 published: true
 ---
 ## 1. Favicon
