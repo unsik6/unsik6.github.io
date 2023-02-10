@@ -33,7 +33,7 @@ tags: [Data Structures, Algorithms, Tree, RMQ, C++]
 
 - Input is the start index $s$ and the end index $e$ of the interval.
 1. (Base case) If $s$ and $e$ are the same, it is a leaf. Store $A[s]$ at the node.
-2. Else, divide the input interval to $s..(s+e)/2$ and $(s+e)/2+1..e$.
+2. Else, divide the input interval $[s..e]$ to $[s..(s+e)/2]$ and $[(s+e)/2+1..e]$.
 3. Run this process of the divided intervals, recursively.
 4. Sum the values stored left child and right child. The children is already built and store by recursion of the third stage.
 
