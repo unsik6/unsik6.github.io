@@ -35,7 +35,7 @@ tags: [Data Structures, Algorithms, Tree, RMQ, C++]
 1. (Base case) If $s$ and $e$ are the same, it is a leaf. Store $A[s]$ at the node.
 2. Else, divide the input interval $[s..e]$ to $[s..(s+e)/2]$ and $[(s+e)/2+1..e]$.
 3. Run this process of the divided intervals, recursively.
-4. Sum the values stored left child and right child. The children is already built and store by recursion of the third stage.
+4. Union the query values stored left child and right child. The children is already built and store by recursion of the third stage.
 
 ### Time Complexity
 &nbsp;&nbsp;The time complexity of <i>Build</i> operation is $O(N \log{N})$, where $N$ is the number of elements. The height of the segment tree is $\lceil \log{N} \rceil$. And there are $O(N)$ <i>sum</i> operation per level.
