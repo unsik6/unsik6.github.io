@@ -1,7 +1,7 @@
 ---
 layout: post
 title: STATS) Basic Stats for AI
-categories: NLP
+categories: AI
 tags: [Statistics, Math, AI]
 ---
 ## 1. Statistics in AI
