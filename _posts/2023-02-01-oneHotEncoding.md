@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NLP-Word Embedding 1) One-Hot Encoding
+title: Word Embedding ①) One-Hot Encoding
 subtitle: Sparse Representation
 categories: NLP
 tags: [AI, NLP, Word Embedding, Preprocessing]
