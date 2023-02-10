@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI) PyTorch GPU Installation
+title: PyTorch) PyTorch GPU Installation
 categories: AI
 tags: [AI, Python, PyTorch, CUDA]
 ---
