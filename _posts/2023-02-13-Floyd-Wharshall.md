@@ -144,7 +144,10 @@ $$
 
 &nbsp;&nbsp;To execute the recursion above, we store $SR$ and $t_{ij}$ in different matrices.<br/>
 &nbsp;&nbsp;However, we can not apply the formula above to WFI algorithm directly. If the order of considering intermediate vertices is the same as the WFI algorithm, $cost_{ij}^{N}$ is not guaranteed to be minimal.<br/>
-&nbsp;&nbsp;If we consider first the vertex whose $t_v$ is greater than others, the found path is likely to be abandoned. Look up the formula above about $cost_{ij}$. $cost_{ij}$ consists of two terms. If we want to check all case of path, we need to increase $cost_{ij}$ gradually. For increasing $t_{ij}$, we need to consider vertices as an intermediate vertex in increasing order of $t_v$.
+
+<br/><img src = "https://user-images.githubusercontent.com/80208196/218675766-bfc8ed76-c940-4699-9300-0cdc99b90540.png"><center><span style = "opacity:0.5">fig 2. Example by <a href = "https://4legs-study.tistory.com/75">4Legs_Archives</a></span></center><br/>
+
+&nbsp;&nbsp;It is not guaranteed that $t_{ij}$ is in the global cost, because $t_{ij}$ can be dropped when the vertext whose $t_v$ is greater than $t_{ij}$ become an intermediate vertex. If $t_{ij}$ is less than $t_{i-k-j}$, then $cost_{ij}$ can be less than $cost_{i-k-j}$. So, we choose a path with $cost_{ij}$. For example, there is an intermediate vertex $v$ whose $t_v$ is greater than $t_{i-k-j}$ and the vertex has to be included in a path from $i$ to $e$. Then, the past choice makes longer path because $SR_{ij}$ can be greater than $SR_{i-k-j}$. <b>To sum up, $t_{ij}$ is the information which can be dropped. We must consider the intermediate vertices so that $t_{ij}$ is forced to be dropped or kept.</b> We need to consider vertices as an intermediate vertex in increasing order of $t_v$. Look up fig 2 which can show why we have to follow the order.
 
 Therefore, run WFI algorithm in the increasing order of $t_v$. Because <b><u>the order of considering intermediate vertices is no matter in original WFI algorithm</u></b>, the changed order does not affect correctness.
 
@@ -162,4 +165,5 @@ Therefore, run WFI algorithm in the increasing order of $t_v$. Because <b><u>the
 <a href = "https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844">Thomas H. Cornen, Charlse E. Leiserson, Ronald L. Rivest, Clifford Stein, "Introduction to Algorithms 3<sup>rd</sup>"</a><br/>
 <a href = "https://velog.io/@codesver/til-algorithm-floyd-warshall-230131">codesver, "[ TIL ] Floyd Warshall"</a><br/>
 <a href = "https://steady-coding.tistory.com/107">제이온, "[BOJ] 백준 1602번 : 도망자 원숭이 (JAVA)"</a><br/>
+<a href = "https://4legs-study.tistory.com/75">4Legs_Archives, "[Floyd] BOJ 1602 도망자 원숭이"</a><br/>
 <a href = "https://www.acmicpc.net/board/view/8589">sksdong1, "풀긴 풀었는데요.."</a><br/>
