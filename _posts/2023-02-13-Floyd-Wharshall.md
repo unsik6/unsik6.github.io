@@ -143,10 +143,9 @@ withKCost, & \text{if $originCost > withKCost$}
 $$
 
 &nbsp;&nbsp;To execute the recursion above, we store $SR$ and $t_{ij}$ in different matrices.<br/>
-&nbsp;&nbsp;However, we can not apply the formula above to WFI algorithm directly. If the order of considering intermediate vertices is the same as the WFI algorithm, $cost_{ij}^{N}$ is not guaranteed to be minimal.
+&nbsp;&nbsp;However, we can not apply the formula above to WFI algorithm directly. If the order of considering intermediate vertices is the same as the WFI algorithm, $cost_{ij}^{N}$ is not guaranteed to be minimal.<br/>
+&nbsp;&nbsp;If we consider first the vertex whose $t_v$ is greater than others, the found path is likely to be abandoned. Look up the formula above about $cost_{ij}$. $cost_{ij}$ consists of two terms. If we want to check all case of path, we need to increase $cost_{ij}$ gradually. For increasing $t_{ij}$, we need to consider vertices as an intermediate vertex in increasing order of $t_v$.
 
-1. The main property of WFI algorithm is that $cost_{ij}^{k}$ is a shortest path from vertex $i$ and vertex $j$, considering vertices in the set $\\{1, 2, ..., k\\}$. So, the vertex $k$ of a path will be detect in $k$th iteration. We need to know whether $t_{ij}$ is the maximum in constant time.
-2. The cost of path whose $t_{ij}$ is more less is less or equal than the cost of path whose $t_{i'j'}$ is more greater. So, if the vertex whose $t_v$ is greater than others, some path is never update. Look up the formula above about $cost_{ij}$. $cost_{ij}$ consists of two terms. If we want to check all case of path, we need to increase $cost_{ij}$ gradually. For increasing $t_{ij}$, we need to consider vertices as an intermediate vertex in increasing order of $t_v$.
 Therefore, run WFI algorithm in the increasing order of $t_v$. Because <b><u>the order of considering intermediate vertices is no matter in original WFI algorithm</u></b>, the changed order does not affect correctness.
 
 <br/><br/>
