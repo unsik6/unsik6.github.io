@@ -9,7 +9,7 @@ title: About
 <div style="width:300px; height:450px; float:left;">
     &nbsp;&nbsp;Hello, I'm unsik6. I was an undergraduate researcher at Algorithm lab of Inha Univ. I am studying algorithms and NLP. I often work on tutoring basic data structures and algorithms to some undergraduate student or people working in programming. I studied developing video games, but not now.<br/><br/>
     - Inha University <br/>
-    - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/>><br/>
+    - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/><br/>
 </div><div style="clear:both;"></div>
 <br/><br/>
 
