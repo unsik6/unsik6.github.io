@@ -7,10 +7,9 @@ title: About
     <img src = "https://user-images.githubusercontent.com/80208196/212664702-62e7627c-f75c-45b7-8613-7a7deaec80f7.jpg" width="300" height="500">
     </div>
 <div style="width:300px; height:450px; float:left;">
-    &nbsp;&nbsp;Hello, I'm unsik6. I'm currently an undergraduate researcher at Algorithm lab of Inha Univ. I am studying string algorithms and NLP. I often work on tutoring basic datastructures and algorithms to some undergraduate student. I studied developing video games, but not now.<br/><br/>
+    &nbsp;&nbsp;Hello, I'm unsik6. I was an undergraduate researcher at Algorithm lab of Inha Univ. I am studying algorithms and NLP. I often work on tutoring basic data structures and algorithms to some undergraduate student or people working in programming. I studied developing video games, but not now.<br/><br/>
     - Inha University <br/>
-    - Major Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/>
-    - Undergraduate researcher at the Alogrithm laboratory <br/><br/>
+    - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/>><br/>
 </div><div style="clear:both;"></div>
 <br/><br/>
 
@@ -23,42 +22,42 @@ title: About
 ## ✎ Languages I am learning
 <hr>
 -  C, C++, C# <br/>
--  CUDA C of NVIDIA <br/>
 -  Python <br/>
 <br/><br/>
 
 ## 💻 Programs I am learning
 <hr>
-- Unity <br/>
-- CUDA <br/>
-- NLP modules based on Transformers <br/>
+- AI modules based on Transformers <br/>
+- AI modules to classify images<br/>
 <br/><br/>
 
-## 📂 Main personal study and work (winter, 2023)
+## 📂 Main personal study and work (spring, 2023)
 <hr>
 - An algorithm to find a maximum common subsequence longer than outputs of previous researchs <br/>
-- Text Summarization in NLP <br/>
-- The Problem Solving study group <br/>
+- Insect images classification
+- Lead the data structures and algorithms study group
 - Study Computational Geometric Algorithms <br/>
 <br/><br/>
 
 ## 📑 Publications and Conferences
 <hr>
-1. Hyeonjun Shin, Jeong Seop Sim, "A New Algorithm of Finding a Maximal Common Subsequence of Two Strings", Korea Software Congress 2022, Jeju, Korea (Dec. 2022) – Oral [In Korean] <br/>
-   - Paper: Proceedings of Korean Institute of Information Scientists and Engineer - KSC2022, 1212-1214 <br/>
+1. <u><b>Hyeonjun Shin</b></u>, Jeong Seop Sim, "A New Algorithm of Finding a Maximal Common Subsequence of Two Strings", Korea Software Congress 2022, Jeju, Korea (Dec. 2022) – Oral [In Korean] <br/>
+   - Paper: <a href = "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11224388">Proceedings of Korean Institute of Information Scientists and Engineer - KSC2022, 1212-1214</a> <br/>
    - Won The Top Paper of Theoretical Computer Science Award <br/>
 <br/> <br/>
 
 ## 📚 What I do and did
 <hr>
 
-### 2022
-<p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~)</b></p>
+### 2023
+<p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~2023.02.)</b></p>
 - Researched maximal common subsequence algorithm <br/>
 - Involved in NLP project: Project management, well-known model and metrics analysis <br/>
 - Give presentations about basic data structures, basic algorithms and papers at weekly lab seminars <br/>
 - Tutor of lecture on problem solving and lecture on data structures <br/>
 <br/><br/>
+
+### 2022
 <p style="font-size:x-large"><b>Mini-Tutor of the game development class using Unity of <i>Sparta Coding Club</i> (2021.12~2022.04)</b></p>
 &nbsp;&nbsp;answering questions from students or helps the students who have difficulty developing games.<br/>
 
