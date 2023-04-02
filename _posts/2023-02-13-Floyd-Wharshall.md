@@ -26,7 +26,7 @@ tags: [BOJ, Algorithms, Shortest Path, Floyd-Warshall, C++]
 
 <b><i>Time & Space Limit</i></b>
 - Time limit: 2 sec
-- Space limit: 128MB
+- Space limit: 128 MB
 
 <br/><br/>
 
