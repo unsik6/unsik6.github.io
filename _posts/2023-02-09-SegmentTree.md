@@ -44,7 +44,9 @@ tags: [Data Structures, Algorithms, Tree, RMQ, C++]
 
 <script src="https://gist.github.com/unsik6/404205df9c6cd43f1d8bd9627b0e45b7.js"></script>
 
-- If you use a static array, make a array of size $4N$. Because a segment tree is a full binary tree whose height is $\lceil \log{N} \rceil$, the upper bound of the size of a segment tree is derived by $$\sum_{i=0}^{\lceil \log{N} \rceil}{2^i} < 2^{\lceil \log{N} \rceil + 1} - 1 < 4N$$
+- If you use a static array, make a array of size $4N$. Because a segment tree is a full binary tree whose height is $\lceil \log{N} \rceil$, the upper bound of the size of a segment tree is derived by
+
+$$\sum_{i=0}^{\lceil \log{N} \rceil}{2^i} < 2^{\lceil \log{N} \rceil + 1} - 1 < 4N$$
 
 <br/><br/>
 
