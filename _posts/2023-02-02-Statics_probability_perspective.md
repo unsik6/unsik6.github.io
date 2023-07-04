@@ -45,9 +45,7 @@ tags: [Statistics, Math, AI]
 ## 3. Conditional Probability
 <hr>
 
-$$
-P(\mathrm{y}\|\mathrm{x})=\frac{P(\mathrm{x},\mathrm{y})}{P(\mathrm{x})}
-$$
+$$ P(\mathrm{y}\|\mathrm{x})=\frac{P(\mathrm{x},\mathrm{y})}{P(\mathrm{x})} $$
 $$ P(\mathrm{x},\mathrm{y})=P(\mathrm{y}\|\mathrm{x})P(\mathrm{x}) $$
 $$ P(\mathrm{x},\mathrm{y})=P(\mathrm{x}\|\mathrm{y})P(\mathrm{y}) $$
 
