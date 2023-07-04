@@ -22,7 +22,7 @@ tags: [Statistics, Math, AI]
 |:---:|:---:|
 |$P(\mathrm{x}=x)$, $P(x)$|Probability that variable $\mathrm{x}$ is $x$|
 |$P(\mathrm{x})$|Probability distribution (function)|
-|$P(\mathrm{x}, \mathrm{y}$|Joint probability distribution|
+|$P(\mathrm{x}, \mathrm{y})$|Joint probability distribution|
 
 
 <br/><br/>
