@@ -27,16 +27,14 @@ title: About
 
 ## 💻 Programs I am learning
 <hr>
-- AI modules based on Transformers <br/>
-- AI modules to classify images<br/>
+- CV modules such as YOLO<br/>
 <br/><br/>
 
 ## 📂 Main personal study and work (spring, 2023)
 <hr>
-- An algorithm to find a maximum common subsequence longer than outputs of previous researchs <br/>
-- Insect images classification
-- Lead the data structures and algorithms study group
-- Study Computational Geometric Algorithms <br/>
+- Insect images detection & classification<br/>
+- Lead the data structures and algorithms study group<br/>
+- Study Computational Geometric Algorithms<br/>
 <br/><br/>
 
 ## 📑 Publications and Conferences
@@ -52,7 +50,7 @@ title: About
 
 ### 2023
 <p style="font-size:x-large"><b>Summer research internship program of POSTECH. (2022.07.~)</b></p>
-- Study the algorithm solving maximum clique problem in hyperbolic random graph.
+- Study the algorithm solving maximum clique problem in hyperbolic random graph.<br/>
 <br/><br/>
 
 <p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~2023.02.)</b></p>
