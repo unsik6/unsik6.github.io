@@ -51,6 +51,10 @@ title: About
 <hr>
 
 ### 2023
+<p style="font-size:x-large"><b>Summer research internship program of POSTECH. (2022.07.~)</b></p>
+- Study the algorithm solving maximum clique problem in hyperbolic random graph.
+<br/><br/>
+
 <p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~2023.02.)</b></p>
 - Researched maximal common subsequence algorithm <br/>
 - Involved in NLP project: Project management, well-known model and metrics analysis <br/>
