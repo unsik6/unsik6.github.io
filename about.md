@@ -51,7 +51,7 @@ title: About
 ### 2023
 <p style="font-size:x-large"><b>embedded CV application developer of <i>Seeds</i>, the developer club (2023.03.~)</b></p>
 - Develop insect images detctor and classifier, which is embedded the application.<br/>
-  - Develop image crawler.
+  - Develop image crawler based on selenium and google chrome driver.<br/>
   - Develop semi-supervised labeler based on <a href = "https://www.kaggle.com/datasets/vencerlanz09/insect-village-synthetic-dataset">Insect Village Synthetic Dataset opened by MARIONETTE</a>.
 <br/><br/>
 
