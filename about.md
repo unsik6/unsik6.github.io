@@ -30,7 +30,7 @@ title: About
 - CV modules such as YOLO<br/>
 <br/><br/>
 
-## 📂 Main personal study and work (spring, 2023)
+## 📂 Main personal study and work (Summer-Fall, 2023)
 <hr>
 - Insect images detection & classification<br/>
 - Lead the data structures and algorithms study group<br/>
@@ -49,8 +49,14 @@ title: About
 <hr>
 
 ### 2023
-<p style="font-size:x-large"><b>Summer research internship program of POSTECH. (2022.07.~)</b></p>
-- Study the algorithm solving maximum clique problem in hyperbolic random graph.<br/>
+<p style="font-size:x-large"><b>embedded CV application developer of <i>Seeds</i>, the developer club (2023.07.~2023.07.)</b></p>
+- Develop insect images detctor and classifier, which is embedded the application.<br/>
+  - Develop image crawler.
+  - Develop semi-supervised labeler based on <a href = "https://www.kaggle.com/datasets/vencerlanz09/insect-village-synthetic-dataset">Insect Village Synthetic Dataset opened by MARIONETTE</a>.
+<br/><br/>
+
+<p style="font-size:x-large"><b>Summer research internship program of POSTECH. (2023.07.~2023.07.)</b></p>
+- Study the algorithm solving problems of graph theory in hyperbolic random graph.<br/>
 <br/><br/>
 
 <p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~2023.02.)</b></p>
