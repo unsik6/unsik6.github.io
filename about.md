@@ -57,7 +57,7 @@ title: About
 - Develop semi-supervised labeler based on <a href = "https://www.kaggle.com/datasets/vencerlanz09/insect-village-synthetic-dataset">Insect Village Synthetic Dataset opened by MARIONETTE</a>.
 <br/><br/>
 
-<p style="font-size:x-large"><b>Participant of summer research internship program of POSTECH (2023.07.~2023.07.)</b></p>
+<p style="font-size:x-large"><b>Participant of Summer Research Internship Program of POSTECH (2023.07.~2023.07.)</b></p>
 - Studied the algorithms solving problems of graph theory in hyperbolic random graph in discrete algorithms lab.<br/>
 <br/><br/>
 
