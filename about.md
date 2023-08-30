@@ -7,7 +7,7 @@ title: About
     <img src = "https://user-images.githubusercontent.com/80208196/212664702-62e7627c-f75c-45b7-8613-7a7deaec80f7.jpg" width="300" height="500">
     </div>
 <div style="width:300px; height:450px; float:left;">
-    &nbsp;&nbsp;Hello, I'm unsik6. I was an undergraduate researcher at Algorithm lab of Inha Univ. I am studying algorithms and NLP. I often work on tutoring basic data structures and algorithms to some undergraduate student or people working in programming. I studied developing video games, but not now.<br/><br/>
+    &nbsp;&nbsp;Hello, I'm unsik6. I was an undergraduate researcher at Algorithm lab of Inha Univ. I am studying data structures and algorithms. I often work on tutoring basic data structures and algorithms to some undergraduate student or people working in programming. I studied developing video games, but not now.<br/><br/>
     - Inha University <br/>
     - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/><br/>
 </div><div style="clear:both;"></div>
@@ -32,9 +32,8 @@ title: About
 
 ## 📂 Main personal study and work (Summer-Fall, 2023)
 <hr>
-- Insect images detection & classification<br/>
-- Lead the data structures and algorithms study group<br/>
-- Study Computational Geometric Algorithms<br/>
+- Insect images detection & classification.<br/>
+- Study computational geometric algorithms and graph theory.<br/>
 <br/><br/>
 
 ## 📑 Publications and Conferences
@@ -49,14 +48,17 @@ title: About
 <hr>
 
 ### 2023
-<p style="font-size:x-large"><b>embedded CV application developer of <i>Seeds</i>, the developer club (2023.03.~)</b></p>
+<p style="font-size:x-large"><b>Undergraduate Researcher of Combinatorial Optimization Lab (2023.08.~ )</b></p>
+<br/><br/>
+
+<p style="font-size:x-large"><b>Embedded CV Application Developer of <i>Seeds</i>, the developer club (2023.03.~)</b></p>
 - Develop insect images detctor and classifier, which is embedded the application.<br/>
 - Develop image crawler based on selenium and google chrome driver.<br/>
 - Develop semi-supervised labeler based on <a href = "https://www.kaggle.com/datasets/vencerlanz09/insect-village-synthetic-dataset">Insect Village Synthetic Dataset opened by MARIONETTE</a>.
 <br/><br/>
 
-<p style="font-size:x-large"><b>Summer research internship program of POSTECH. (2023.07.~2023.07.)</b></p>
-- Study the algorithm solving problems of graph theory in hyperbolic random graph.<br/>
+<p style="font-size:x-large"><b>Participant of summer research internship program of POSTECH (2023.07.~2023.07.)</b></p>
+- Studied the algorithms solving problems of graph theory in hyperbolic random graph in discrete algorithms lab.<br/>
 <br/><br/>
 
 <p style="font-size:x-large"><b>Undergraduate Researcher of Algorithm & Application Lab in INHA Univ. (2022.02.~2023.02.)</b></p>
