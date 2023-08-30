@@ -48,7 +48,7 @@ title: About
 <hr>
 
 ### 2023
-<p style="font-size:x-large"><b>Undergraduate Researcher of Combinatorial Optimization Lab (2023.08.~ )</b></p>
+<p style="font-size:x-large"><b>Undergraduate Researcher of Combinatorial Optimization Lab in Yonsei Univ. (2023.08.~ )</b></p>
 <br/>
 
 <p style="font-size:x-large"><b>Embedded CV Application Developer of <i>Seeds</i>, the developer club (2023.03.~)</b></p>
