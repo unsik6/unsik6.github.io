@@ -7,7 +7,7 @@ title: About
     <img src = "https://user-images.githubusercontent.com/80208196/212664702-62e7627c-f75c-45b7-8613-7a7deaec80f7.jpg" width="300" height="500">
     </div>
 <div style="width:300px; height:450px; float:left;">
-    &nbsp;&nbsp;Hello, I'm unsik6. I was an undergraduate researcher at Algorithm lab of Inha Univ. I am studying data structures and algorithms. I often work on tutoring basic data structures and algorithms to some undergraduate student or people working in programming. I studied developing video games, but not now.<br/><br/>
+    &nbsp;&nbsp;Hello, I'm unsik6. I am integrated PhD program student major in CSE(Computer Sience and Engineering) at POSTECH(Pohang University of Science and Technology) from 2024.<br/><br/>
     - Inha University <br/>
     - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/><br/>
 </div><div style="clear:both;"></div>
@@ -19,21 +19,15 @@ title: About
 - e-mail: <a href = "mailto:tlsguswns1196xx@gmail.com">tlsguswns1196xx@gmail.com</a>
 <br/><br/>
 
-## ✎ Languages I am learning
+## ✎ Languages I am learning individually
 <hr>
 -  C, C++, C# <br/>
 -  Python <br/>
 <br/><br/>
 
-## 💻 Programs I am learning
-<hr>
-- CV modules such as YOLO<br/>
-<br/><br/>
-
 ## 📂 Main personal study and work (Summer-Fall, 2023)
 <hr>
-- Insect images detection & classification.<br/>
-- Study computational geometric algorithms and graph theory.<br/>
+- Study graph algorithms, computational ceometric Algorithms, parameterized algorithms and approximation algorithms.<br/>
 <br/><br/>
 
 ## 📑 Publications and Conferences
