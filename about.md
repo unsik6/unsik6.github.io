@@ -8,8 +8,6 @@ title: About
     </div>
 <div style="width:300px; height:450px; float:left;">
     &nbsp;&nbsp;Hello, I'm unsik6. I am integrated PhD program student major in CSE(Computer Sience and Engineering) at POSTECH(Pohang University of Science and Technology) from 2024.<br/><br/>
-    - Inha University <br/>
-    - Major: Department of Computer Engineering (1st, 2021~) & Political Science and International Relations (2nd, 2016~) <br/><br/>
 </div><div style="clear:both;"></div>
 <br/><br/>
 
